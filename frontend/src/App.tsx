@@ -1271,7 +1271,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="v1-route" aria-hidden="true">
+            <div className="v1-route">
               <div className="v1-route-cap">
                 <b>{form.origin || '出发'}</b>
                 <b>{form.destination || '到达'}</b>
@@ -1315,6 +1315,12 @@ export default function App() {
                 ))}
               </div>
                 </>
+              )}
+
+              {amapConfigured && mapFailed && (
+                <button type="button" className="v1-route-retry" onClick={() => setMapFailed(false)}>
+                  重试真实地图
+                </button>
               )}
 
               <span className="v1-route-badge">

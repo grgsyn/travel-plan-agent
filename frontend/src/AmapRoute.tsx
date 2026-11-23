@@ -87,7 +87,7 @@ export default function AmapRoute({ origin, destination, onError }: Props) {
 
     const timer = window.setTimeout(() => {
       if (!disposed && loading) onErrorRef.current?.()
-    }, 12000)
+    }, 20000)
 
     loadAmap()
       .then(async (AMap) => {
