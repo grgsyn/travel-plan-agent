@@ -29,6 +29,7 @@ from ..cancellation import RunCancelled
 from ..agents import critic, lodging, llm_refiner, planner, poi, transport, weather
 from ..agents import hub as peer_hub
 from ..checkpoint import PersistentSaver
+from ..coverage import check_coverage, coverage_summary
 from ..followups import FollowUpRequest, safe_generate
 from ..graph.build import build
 from ..llm import LLMClient, LLMError
@@ -514,12 +515,24 @@ async def create_plan(brief: TripBrief):
         make_source(cfg.datasource)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e)) from e
+    problems = check_coverage(brief, cfg)
+    if problems:
+        raise HTTPException(
+            status_code=400,
+            detail="当前演示数据未覆盖该行程：" + "；".join(problems),
+        )
     plan_id = store.new_id()
     return StreamingResponse(
         _plan_stream(brief, plan_id, cfg),
         media_type="text/event-stream",
         headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
     )
+
+
+@app.get("/api/coverage")
+async def coverage() -> dict:
+    """当前可演示的航线与城市覆盖，供设置页/调试查看。"""
+    return coverage_summary()
 
 
 @app.post("/api/plan/questions")
