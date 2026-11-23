@@ -1,70 +1,3623 @@
 [
-  {"id": "p01", "name": "宽窄巷子", "category": "人文", "open_time": "08:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["步行", "小吃", "老人友好", "室外"], "lat": 30.6697, "lng": 104.0559, "indoor": false},
-  {"id": "p02", "name": "武侯祠", "category": "人文", "open_time": "08:00", "close_time": "20:00", "closed_days": [], "duration_min": 90, "ticket_price": 50, "recommended_slot": ["上午", "下午"], "tags": ["三国", "老人友好", "室外"], "lat": 30.6457, "lng": 104.0443, "indoor": false},
-  {"id": "p03", "name": "锦里古街", "category": "人文", "open_time": "10:00", "close_time": "23:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["晚上", "下午"], "tags": ["小吃", "夜景", "步行"], "lat": 30.6439, "lng": 104.0436, "indoor": false},
-  {"id": "p04", "name": "成都大熊猫繁育研究基地", "category": "自然", "open_time": "07:30", "close_time": "18:00", "closed_days": [], "duration_min": 180, "ticket_price": 55, "recommended_slot": ["上午"], "tags": ["亲子", "需早到", "室外", "老人友好"], "lat": 30.7343, "lng": 104.1469, "indoor": false},
-  {"id": "p05", "name": "都江堰景区", "category": "自然人文", "open_time": "08:00", "close_time": "18:00", "closed_days": [], "duration_min": 240, "ticket_price": 80, "recommended_slot": ["上午", "下午"], "tags": ["需半天", "步行多", "老人慎选"], "lat": 31.0022, "lng": 103.6186, "indoor": false},
-  {"id": "p06", "name": "青城山前山", "category": "自然", "open_time": "08:00", "close_time": "17:00", "closed_days": [], "duration_min": 300, "ticket_price": 90, "recommended_slot": ["上午"], "tags": ["爬山", "体力消耗大", "老人不宜"], "lat": 30.8997, "lng": 103.5722, "indoor": false},
-  {"id": "p07", "name": "杜甫草堂", "category": "人文", "open_time": "09:00", "close_time": "18:00", "closed_days": [], "duration_min": 90, "ticket_price": 50, "recommended_slot": ["上午", "下午"], "tags": ["园林", "老人友好", "室外"], "lat": 30.6600, "lng": 104.0289, "indoor": false},
-  {"id": "p08", "name": "成都博物馆", "category": "人文", "open_time": "09:00", "close_time": "17:00", "closed_days": [0], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "免费", "老人友好"], "lat": 30.6577, "lng": 104.0633, "indoor": true},
-  {"id": "p09", "name": "人民公园鹤鸣茶社", "category": "休闲", "open_time": "06:00", "close_time": "22:00", "closed_days": [], "duration_min": 60, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["喝茶", "慢节奏", "老人友好"], "lat": 30.6604, "lng": 104.0576, "indoor": false},
-  {"id": "p10", "name": "春熙路太古里", "category": "购物", "open_time": "10:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["购物", "室内外混合", "雨天友好"], "lat": 30.6524, "lng": 104.0817, "indoor": true},
-  {"id": "p11", "name": "九眼桥酒吧街", "category": "夜生活", "open_time": "18:00", "close_time": "02:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["晚上"], "tags": ["夜生活", "不适合儿童老人"], "lat": 30.6392, "lng": 104.0951, "indoor": false},
-  {"id": "p12", "name": "四川博物院", "category": "人文", "open_time": "09:00", "close_time": "17:00", "closed_days": [0], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "免费", "老人友好"], "lat": 30.6688, "lng": 104.0225, "indoor": true},
-  {"id": "p13", "name": "文殊院", "category": "人文", "open_time": "08:00", "close_time": "17:00", "closed_days": [], "duration_min": 60, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["安静", "老人友好", "素斋", "室外"], "lat": 30.6788, "lng": 104.0715, "indoor": false},
-  {"id": "p14", "name": "大慈寺", "category": "人文", "open_time": "08:00", "close_time": "17:30", "closed_days": [], "duration_min": 45, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["安静", "老人友好", "近商圈"], "lat": 30.6554, "lng": 104.0805, "indoor": false},
-  {"id": "p15", "name": "金沙遗址博物馆", "category": "人文", "open_time": "08:00", "close_time": "18:00", "closed_days": [0], "duration_min": 120, "ticket_price": 70, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "考古", "老人友好"], "lat": 30.6800, "lng": 104.0135, "indoor": true},
-  {"id": "p16", "name": "东郊记忆", "category": "文创", "open_time": "10:00", "close_time": "22:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["拍照", "文创", "年轻人"], "lat": 30.6685, "lng": 104.1273, "indoor": false},
-  {"id": "p17", "name": "望江楼公园", "category": "休闲", "open_time": "06:00", "close_time": "21:00", "closed_days": [], "duration_min": 60, "ticket_price": 20, "recommended_slot": ["上午", "下午"], "tags": ["竹子", "江景", "老人友好", "慢节奏"], "lat": 30.6260, "lng": 104.0915, "indoor": false},
-  {"id": "p18", "name": "青羊宫", "category": "人文", "open_time": "08:00", "close_time": "18:00", "closed_days": [], "duration_min": 45, "ticket_price": 10, "recommended_slot": ["上午", "下午"], "tags": ["道教", "老人友好", "安静"], "lat": 30.6656, "lng": 104.0387, "indoor": false},
-  {"id": "p19", "name": "天府广场", "category": "城市", "open_time": "06:00", "close_time": "23:00", "closed_days": [], "duration_min": 30, "ticket_price": 0, "recommended_slot": ["上午", "晚上"], "tags": ["地标", "免费", "交通枢纽"], "lat": 30.6570, "lng": 104.0658, "indoor": false},
-  {"id": "p20", "name": "环球中心海洋乐园", "category": "亲子", "open_time": "10:00", "close_time": "18:00", "closed_days": [], "duration_min": 180, "ticket_price": 180, "recommended_slot": ["下午"], "tags": ["亲子", "室内", "雨天友好"], "lat": 30.5720, "lng": 104.0640, "indoor": true},
-  {"id": "p21", "name": "人民公园防空洞茶座", "category": "休闲", "open_time": "09:00", "close_time": "20:00", "closed_days": [], "duration_min": 45, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "慢节奏"], "lat": 30.6601, "lng": 104.0570, "indoor": true},
-  {"id": "p22", "name": "成都市天府美术馆", "category": "人文", "open_time": "10:00", "close_time": "20:00", "closed_days": [0], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "免费", "老人友好", "需预约"], "lat": 30.7189, "lng": 104.0311, "indoor": true},
-  {"id": "p23", "name": "四川大学博物馆", "category": "人文", "open_time": "09:00", "close_time": "17:00", "closed_days": [5, 6], "duration_min": 120, "ticket_price": 30, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "老人友好"], "lat": 30.6320, "lng": 104.0890, "indoor": true},
-  {"id": "p24", "name": "浣花溪公园", "category": "休闲", "open_time": "06:00", "close_time": "22:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室外", "免费", "老人友好", "慢节奏", "步行"], "lat": 30.6638, "lng": 104.0356, "indoor": false},
-
-  {"id": "x01", "city": "西安", "name": "陕西历史博物馆", "category": "人文", "open_time": "09:00", "close_time": "17:30", "closed_days": [0], "duration_min": 180, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["室内", "雨天友好", "免费", "需预约", "老人友好"], "lat": 34.2225, "lng": 108.9467, "indoor": true},
-  {"id": "x02", "city": "西安", "name": "秦始皇帝陵博物院", "category": "人文", "open_time": "08:30", "close_time": "18:00", "closed_days": [], "duration_min": 240, "ticket_price": 120, "recommended_slot": ["上午"], "tags": ["世界遗产", "需半天", "步行多", "老人慎选"], "lat": 34.3841, "lng": 109.2785, "indoor": false},
-  {"id": "x03", "city": "西安", "name": "西安城墙", "category": "人文", "open_time": "08:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 54, "recommended_slot": ["上午", "晚上"], "tags": ["骑行", "夜景", "老人友好"], "lat": 34.2515, "lng": 108.9450, "indoor": false},
-  {"id": "x04", "city": "西安", "name": "大雁塔", "category": "人文", "open_time": "08:00", "close_time": "17:00", "closed_days": [], "duration_min": 90, "ticket_price": 40, "recommended_slot": ["上午", "下午"], "tags": ["唐代", "登塔", "老人慎选"], "lat": 34.2186, "lng": 108.9599, "indoor": false},
-  {"id": "x05", "city": "西安", "name": "大唐不夜城", "category": "夜生活", "open_time": "10:00", "close_time": "23:30", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["晚上"], "tags": ["夜景", "免费", "表演", "年轻人"], "lat": 34.2150, "lng": 108.9640, "indoor": false},
-  {"id": "x06", "city": "西安", "name": "钟鼓楼", "category": "人文", "open_time": "08:30", "close_time": "21:00", "closed_days": [], "duration_min": 60, "ticket_price": 50, "recommended_slot": ["上午", "晚上"], "tags": ["地标", "夜景", "老人友好"], "lat": 34.2610, "lng": 108.9450, "indoor": true},
-  {"id": "x07", "city": "西安", "name": "华清宫", "category": "人文", "open_time": "07:00", "close_time": "19:00", "closed_days": [], "duration_min": 180, "ticket_price": 120, "recommended_slot": ["上午"], "tags": ["温泉", "唐文化", "步行多", "老人慎选"], "lat": 34.3683, "lng": 109.2167, "indoor": false},
-  {"id": "x08", "city": "西安", "name": "西安碑林博物馆", "category": "人文", "open_time": "08:00", "close_time": "18:00", "closed_days": [], "duration_min": 120, "ticket_price": 65, "recommended_slot": ["上午", "下午"], "tags": ["书法", "室内", "雨天友好", "安静"], "lat": 34.2550, "lng": 108.9520, "indoor": true},
-  {"id": "x09", "city": "西安", "name": "西安博物院", "category": "人文", "open_time": "09:00", "close_time": "18:00", "closed_days": [1], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["下午"], "tags": ["室内", "雨天友好", "免费", "小雁塔"], "lat": 34.2380, "lng": 108.9430, "indoor": true},
-  {"id": "x10", "city": "西安", "name": "大明宫国家遗址公园", "category": "人文", "open_time": "08:30", "close_time": "18:00", "closed_days": [], "duration_min": 150, "ticket_price": 60, "recommended_slot": ["上午", "下午"], "tags": ["遗址", "开阔", "老人友好"], "lat": 34.2990, "lng": 108.9600, "indoor": false},
-  {"id": "x11", "city": "西安", "name": "回民街", "category": "美食", "open_time": "09:00", "close_time": "23:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["中午", "晚上"], "tags": ["小吃", "免费", "步行", "热闹"], "lat": 34.2650, "lng": 108.9400, "indoor": false},
-  {"id": "x12", "city": "西安", "name": "永兴坊", "category": "美食", "open_time": "10:00", "close_time": "22:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["中午", "晚上"], "tags": ["小吃", "非遗", "免费", "室内外混合"], "lat": 34.2660, "lng": 108.9560, "indoor": false},
-  {"id": "x13", "city": "西安", "name": "大唐芙蓉园", "category": "亲子", "open_time": "09:00", "close_time": "22:00", "closed_days": [], "duration_min": 180, "ticket_price": 120, "recommended_slot": ["下午", "晚上"], "tags": ["演出", "夜景", "亲子", "需半天"], "lat": 34.2130, "lng": 108.9700, "indoor": false},
-  {"id": "x14", "city": "西安", "name": "陕西考古博物馆", "category": "人文", "open_time": "09:00", "close_time": "17:00", "closed_days": [0], "duration_min": 150, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["室内", "雨天友好", "免费", "需预约", "亲子"], "lat": 34.1300, "lng": 108.8700, "indoor": true},
-  {"id": "x15", "city": "西安", "name": "小南门早市", "category": "美食", "open_time": "06:00", "close_time": "09:00", "closed_days": [], "duration_min": 60, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["小吃", "市井", "免费", "需早到"], "lat": 34.2530, "lng": 108.9380, "indoor": false},
-  {"id": "x16", "city": "西安", "name": "华山", "category": "自然", "open_time": "07:00", "close_time": "19:00", "closed_days": [], "duration_min": 300, "ticket_price": 160, "recommended_slot": ["上午"], "tags": ["爬山", "体力消耗大", "老人不宜", "需半天", "索道"], "lat": 34.4830, "lng": 110.0870, "indoor": false},
-  {"id": "x17", "city": "西安", "name": "秦岭野生动物园", "category": "自然", "open_time": "08:30", "close_time": "17:30", "closed_days": [], "duration_min": 180, "ticket_price": 100, "recommended_slot": ["上午", "下午"], "tags": ["自然", "亲子", "动物", "户外", "老人友好"], "lat": 34.0320, "lng": 108.8640, "indoor": false},
-
-  {"id": "m01", "city": "厦门", "name": "鼓浪屿", "category": "人文", "open_time": "07:00", "close_time": "21:00", "closed_days": [], "duration_min": 240, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["轮渡", "需半天", "步行多", "世界遗产"], "lat": 24.4470, "lng": 118.0670, "indoor": false},
-  {"id": "m02", "city": "厦门", "name": "厦门大学", "category": "人文", "open_time": "12:00", "close_time": "17:30", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["下午"], "tags": ["校园", "免费", "需预约", "拍照"], "lat": 24.4380, "lng": 118.0960, "indoor": false},
-  {"id": "m03", "city": "厦门", "name": "南普陀寺", "category": "人文", "open_time": "04:00", "close_time": "18:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["上午"], "tags": ["寺院", "免费", "素斋", "老人友好"], "lat": 24.4410, "lng": 118.0930, "indoor": false},
-  {"id": "m04", "city": "厦门", "name": "环岛路", "category": "自然", "open_time": "06:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["海岸线", "骑行", "免费", "老人友好"], "lat": 24.4300, "lng": 118.1400, "indoor": false},
-  {"id": "m05", "city": "厦门", "name": "曾厝垵", "category": "美食", "open_time": "09:00", "close_time": "23:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["中午", "晚上"], "tags": ["小吃", "文创", "免费", "热闹"], "lat": 24.4320, "lng": 118.1200, "indoor": false},
-  {"id": "m06", "city": "厦门", "name": "胡里山炮台", "category": "人文", "open_time": "07:30", "close_time": "18:00", "closed_days": [], "duration_min": 90, "ticket_price": 25, "recommended_slot": ["上午", "下午"], "tags": ["历史", "海防", "表演", "老人友好"], "lat": 24.4390, "lng": 118.1080, "indoor": false},
-  {"id": "m07", "city": "厦门", "name": "厦门科技馆", "category": "亲子", "open_time": "09:00", "close_time": "17:00", "closed_days": [0], "duration_min": 150, "ticket_price": 100, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "亲子", "互动"], "lat": 24.4790, "lng": 118.0900, "indoor": true},
-  {"id": "m08", "city": "厦门", "name": "中山路步行街", "category": "购物", "open_time": "09:00", "close_time": "23:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["骑楼", "购物", "免费", "夜景"], "lat": 24.4530, "lng": 118.0820, "indoor": false},
-  {"id": "m09", "city": "厦门", "name": "集美学村", "category": "人文", "open_time": "08:00", "close_time": "18:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["建筑", "免费", "安静", "老人友好"], "lat": 24.5750, "lng": 118.0980, "indoor": false},
-  {"id": "m10", "city": "厦门", "name": "五缘湾湿地公园", "category": "自然", "open_time": "06:00", "close_time": "20:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["湿地", "免费", "慢节奏", "亲子"], "lat": 24.5250, "lng": 118.1720, "indoor": false},
-  {"id": "m11", "city": "厦门", "name": "厦门园林植物园", "category": "自然", "open_time": "06:30", "close_time": "18:00", "closed_days": [], "duration_min": 150, "ticket_price": 40, "recommended_slot": ["上午"], "tags": ["植物", "拍照", "步行多", "老人慎选"], "lat": 24.4520, "lng": 118.1060, "indoor": false},
-  {"id": "m12", "city": "厦门", "name": "沙坡尾", "category": "文创", "open_time": "10:00", "close_time": "22:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["文创", "免费", "拍照", "年轻人"], "lat": 24.4420, "lng": 118.0870, "indoor": false},
-
-  {"id": "b01", "city": "北京", "name": "故宫博物院", "category": "人文", "open_time": "08:30", "close_time": "17:00", "closed_days": [0], "duration_min": 240, "ticket_price": 60, "recommended_slot": ["上午"], "tags": ["世界遗产", "需半天", "需预约", "步行多", "老人慎选"], "lat": 39.9163, "lng": 116.3972, "indoor": false},
-  {"id": "b02", "city": "北京", "name": "天安门广场", "category": "城市", "open_time": "05:00", "close_time": "22:00", "closed_days": [], "duration_min": 60, "ticket_price": 0, "recommended_slot": ["上午", "晚上"], "tags": ["地标", "免费", "需预约", "开阔"], "lat": 39.9055, "lng": 116.3976, "indoor": false},
-  {"id": "b03", "city": "北京", "name": "八达岭长城", "category": "自然", "open_time": "07:30", "close_time": "17:30", "closed_days": [], "duration_min": 240, "ticket_price": 40, "recommended_slot": ["上午"], "tags": ["世界遗产", "爬山", "体力消耗大", "老人不宜", "需半天"], "lat": 40.3586, "lng": 116.0169, "indoor": false},
-  {"id": "b04", "city": "北京", "name": "颐和园", "category": "人文", "open_time": "06:30", "close_time": "18:00", "closed_days": [], "duration_min": 180, "ticket_price": 30, "recommended_slot": ["上午", "下午"], "tags": ["皇家园林", "湖景", "步行多", "老人慎选"], "lat": 39.9999, "lng": 116.2755, "indoor": false},
-  {"id": "b05", "city": "北京", "name": "天坛公园", "category": "人文", "open_time": "06:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 34, "recommended_slot": ["上午"], "tags": ["世界遗产", "古建", "老人友好", "开阔"], "lat": 39.8822, "lng": 116.4066, "indoor": false},
-  {"id": "b06", "city": "北京", "name": "中国国家博物馆", "category": "人文", "open_time": "09:00", "close_time": "17:00", "closed_days": [0], "duration_min": 180, "ticket_price": 0, "recommended_slot": ["上午", "下午"], "tags": ["室内", "雨天友好", "免费", "需预约", "老人友好"], "lat": 39.9050, "lng": 116.4010, "indoor": true},
-  {"id": "b07", "city": "北京", "name": "南锣鼓巷", "category": "美食", "open_time": "09:00", "close_time": "22:00", "closed_days": [], "duration_min": 90, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["小吃", "胡同", "免费", "热闹"], "lat": 39.9370, "lng": 116.4030, "indoor": false},
-  {"id": "b08", "city": "北京", "name": "什刹海", "category": "休闲", "open_time": "06:00", "close_time": "22:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["下午", "晚上"], "tags": ["湖景", "免费", "慢节奏", "夜景"], "lat": 39.9400, "lng": 116.3860, "indoor": false},
-  {"id": "b09", "city": "北京", "name": "798 艺术区", "category": "文创", "open_time": "10:00", "close_time": "18:00", "closed_days": [], "duration_min": 120, "ticket_price": 0, "recommended_slot": ["下午"], "tags": ["当代艺术", "免费", "拍照", "年轻人"], "lat": 39.9842, "lng": 116.4950, "indoor": false},
-  {"id": "b10", "city": "北京", "name": "雍和宫", "category": "人文", "open_time": "09:00", "close_time": "16:30", "closed_days": [], "duration_min": 90, "ticket_price": 25, "recommended_slot": ["上午"], "tags": ["寺院", "藏传佛教", "安静", "老人友好"], "lat": 39.9470, "lng": 116.4170, "indoor": false},
-  {"id": "b11", "city": "北京", "name": "景山公园", "category": "自然", "open_time": "06:00", "close_time": "21:00", "closed_days": [], "duration_min": 60, "ticket_price": 2, "recommended_slot": ["上午", "下午"], "tags": ["俯瞰故宫", "登高", "老人慎选"], "lat": 39.9280, "lng": 116.3940, "indoor": false}
+  {
+    "id": "p01",
+    "name": "宽窄巷子",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "步行",
+      "小吃",
+      "老人友好",
+      "室外"
+    ],
+    "lat": 30.6697,
+    "lng": 104.0559,
+    "indoor": false
+  },
+  {
+    "id": "p02",
+    "name": "武侯祠",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "20:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 50,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "三国",
+      "老人友好",
+      "室外"
+    ],
+    "lat": 30.6457,
+    "lng": 104.0443,
+    "indoor": false
+  },
+  {
+    "id": "p03",
+    "name": "锦里古街",
+    "category": "人文",
+    "open_time": "10:00",
+    "close_time": "23:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "晚上",
+      "下午"
+    ],
+    "tags": [
+      "小吃",
+      "夜景",
+      "步行"
+    ],
+    "lat": 30.6439,
+    "lng": 104.0436,
+    "indoor": false
+  },
+  {
+    "id": "p04",
+    "name": "成都大熊猫繁育研究基地",
+    "category": "自然",
+    "open_time": "07:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 55,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "亲子",
+      "需早到",
+      "室外",
+      "老人友好"
+    ],
+    "lat": 30.7343,
+    "lng": 104.1469,
+    "indoor": false
+  },
+  {
+    "id": "p05",
+    "name": "都江堰景区",
+    "category": "自然人文",
+    "open_time": "08:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 240,
+    "ticket_price": 80,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "需半天",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 31.0022,
+    "lng": 103.6186,
+    "indoor": false
+  },
+  {
+    "id": "p06",
+    "name": "青城山前山",
+    "category": "自然",
+    "open_time": "08:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "duration_min": 300,
+    "ticket_price": 90,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "爬山",
+      "体力消耗大",
+      "老人不宜"
+    ],
+    "lat": 30.8997,
+    "lng": 103.5722,
+    "indoor": false
+  },
+  {
+    "id": "p07",
+    "name": "杜甫草堂",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 50,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "园林",
+      "老人友好",
+      "室外"
+    ],
+    "lat": 30.66,
+    "lng": 104.0289,
+    "indoor": false
+  },
+  {
+    "id": "p08",
+    "name": "成都博物馆",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "老人友好"
+    ],
+    "lat": 30.6577,
+    "lng": 104.0633,
+    "indoor": true
+  },
+  {
+    "id": "p09",
+    "name": "人民公园鹤鸣茶社",
+    "category": "休闲",
+    "open_time": "06:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "喝茶",
+      "慢节奏",
+      "老人友好"
+    ],
+    "lat": 30.6604,
+    "lng": 104.0576,
+    "indoor": false
+  },
+  {
+    "id": "p10",
+    "name": "春熙路太古里",
+    "category": "购物",
+    "open_time": "10:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "购物",
+      "室内外混合",
+      "雨天友好"
+    ],
+    "lat": 30.6524,
+    "lng": 104.0817,
+    "indoor": true
+  },
+  {
+    "id": "p11",
+    "name": "九眼桥酒吧街",
+    "category": "夜生活",
+    "open_time": "18:00",
+    "close_time": "02:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "晚上"
+    ],
+    "tags": [
+      "夜生活",
+      "不适合儿童老人"
+    ],
+    "lat": 30.6392,
+    "lng": 104.0951,
+    "indoor": false
+  },
+  {
+    "id": "p12",
+    "name": "四川博物院",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "老人友好"
+    ],
+    "lat": 30.6688,
+    "lng": 104.0225,
+    "indoor": true
+  },
+  {
+    "id": "p13",
+    "name": "文殊院",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "安静",
+      "老人友好",
+      "素斋",
+      "室外"
+    ],
+    "lat": 30.6788,
+    "lng": 104.0715,
+    "indoor": false
+  },
+  {
+    "id": "p14",
+    "name": "大慈寺",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "17:30",
+    "closed_days": [],
+    "duration_min": 45,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "安静",
+      "老人友好",
+      "近商圈"
+    ],
+    "lat": 30.6554,
+    "lng": 104.0805,
+    "indoor": false
+  },
+  {
+    "id": "p15",
+    "name": "金沙遗址博物馆",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "18:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 120,
+    "ticket_price": 70,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "考古",
+      "老人友好"
+    ],
+    "lat": 30.68,
+    "lng": 104.0135,
+    "indoor": true
+  },
+  {
+    "id": "p16",
+    "name": "东郊记忆",
+    "category": "文创",
+    "open_time": "10:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "拍照",
+      "文创",
+      "年轻人"
+    ],
+    "lat": 30.6685,
+    "lng": 104.1273,
+    "indoor": false
+  },
+  {
+    "id": "p17",
+    "name": "望江楼公园",
+    "category": "休闲",
+    "open_time": "06:00",
+    "close_time": "21:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 20,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "竹子",
+      "江景",
+      "老人友好",
+      "慢节奏"
+    ],
+    "lat": 30.626,
+    "lng": 104.0915,
+    "indoor": false
+  },
+  {
+    "id": "p18",
+    "name": "青羊宫",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 45,
+    "ticket_price": 10,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "道教",
+      "老人友好",
+      "安静"
+    ],
+    "lat": 30.6656,
+    "lng": 104.0387,
+    "indoor": false
+  },
+  {
+    "id": "p19",
+    "name": "天府广场",
+    "category": "城市",
+    "open_time": "06:00",
+    "close_time": "23:00",
+    "closed_days": [],
+    "duration_min": 30,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "晚上"
+    ],
+    "tags": [
+      "地标",
+      "免费",
+      "交通枢纽"
+    ],
+    "lat": 30.657,
+    "lng": 104.0658,
+    "indoor": false
+  },
+  {
+    "id": "p20",
+    "name": "环球中心海洋乐园",
+    "category": "亲子",
+    "open_time": "10:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 180,
+    "recommended_slot": [
+      "下午"
+    ],
+    "tags": [
+      "亲子",
+      "室内",
+      "雨天友好"
+    ],
+    "lat": 30.572,
+    "lng": 104.064,
+    "indoor": true
+  },
+  {
+    "id": "p21",
+    "name": "人民公园防空洞茶座",
+    "category": "休闲",
+    "open_time": "09:00",
+    "close_time": "20:00",
+    "closed_days": [],
+    "duration_min": 45,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "慢节奏"
+    ],
+    "lat": 30.6601,
+    "lng": 104.057,
+    "indoor": true
+  },
+  {
+    "id": "p22",
+    "name": "成都市天府美术馆",
+    "category": "人文",
+    "open_time": "10:00",
+    "close_time": "20:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "老人友好",
+      "需预约"
+    ],
+    "lat": 30.7189,
+    "lng": 104.0311,
+    "indoor": true
+  },
+  {
+    "id": "p23",
+    "name": "四川大学博物馆",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      5,
+      6
+    ],
+    "duration_min": 120,
+    "ticket_price": 30,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "老人友好"
+    ],
+    "lat": 30.632,
+    "lng": 104.089,
+    "indoor": true
+  },
+  {
+    "id": "p24",
+    "name": "浣花溪公园",
+    "category": "休闲",
+    "open_time": "06:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室外",
+      "免费",
+      "老人友好",
+      "慢节奏",
+      "步行"
+    ],
+    "lat": 30.6638,
+    "lng": 104.0356,
+    "indoor": false
+  },
+  {
+    "id": "x01",
+    "city": "西安",
+    "name": "陕西历史博物馆",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:30",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 180,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "需预约",
+      "老人友好"
+    ],
+    "lat": 34.2225,
+    "lng": 108.9467,
+    "indoor": true
+  },
+  {
+    "id": "x02",
+    "city": "西安",
+    "name": "秦始皇帝陵博物院",
+    "category": "人文",
+    "open_time": "08:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 240,
+    "ticket_price": 120,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "世界遗产",
+      "需半天",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 34.3841,
+    "lng": 109.2785,
+    "indoor": false
+  },
+  {
+    "id": "x03",
+    "city": "西安",
+    "name": "西安城墙",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 54,
+    "recommended_slot": [
+      "上午",
+      "晚上"
+    ],
+    "tags": [
+      "骑行",
+      "夜景",
+      "老人友好"
+    ],
+    "lat": 34.2515,
+    "lng": 108.945,
+    "indoor": false
+  },
+  {
+    "id": "x04",
+    "city": "西安",
+    "name": "大雁塔",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 40,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "唐代",
+      "登塔",
+      "老人慎选"
+    ],
+    "lat": 34.2186,
+    "lng": 108.9599,
+    "indoor": false
+  },
+  {
+    "id": "x05",
+    "city": "西安",
+    "name": "大唐不夜城",
+    "category": "夜生活",
+    "open_time": "10:00",
+    "close_time": "23:30",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "晚上"
+    ],
+    "tags": [
+      "夜景",
+      "免费",
+      "表演",
+      "年轻人"
+    ],
+    "lat": 34.215,
+    "lng": 108.964,
+    "indoor": false
+  },
+  {
+    "id": "x06",
+    "city": "西安",
+    "name": "钟鼓楼",
+    "category": "人文",
+    "open_time": "08:30",
+    "close_time": "21:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 50,
+    "recommended_slot": [
+      "上午",
+      "晚上"
+    ],
+    "tags": [
+      "地标",
+      "夜景",
+      "老人友好"
+    ],
+    "lat": 34.261,
+    "lng": 108.945,
+    "indoor": true
+  },
+  {
+    "id": "x07",
+    "city": "西安",
+    "name": "华清宫",
+    "category": "人文",
+    "open_time": "07:00",
+    "close_time": "19:00",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 120,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "温泉",
+      "唐文化",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 34.3683,
+    "lng": 109.2167,
+    "indoor": false
+  },
+  {
+    "id": "x08",
+    "city": "西安",
+    "name": "西安碑林博物馆",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 65,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "书法",
+      "室内",
+      "雨天友好",
+      "安静"
+    ],
+    "lat": 34.255,
+    "lng": 108.952,
+    "indoor": true
+  },
+  {
+    "id": "x09",
+    "city": "西安",
+    "name": "西安博物院",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "18:00",
+    "closed_days": [
+      1
+    ],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "小雁塔"
+    ],
+    "lat": 34.238,
+    "lng": 108.943,
+    "indoor": true
+  },
+  {
+    "id": "x10",
+    "city": "西安",
+    "name": "大明宫国家遗址公园",
+    "category": "人文",
+    "open_time": "08:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 150,
+    "ticket_price": 60,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "遗址",
+      "开阔",
+      "老人友好"
+    ],
+    "lat": 34.299,
+    "lng": 108.96,
+    "indoor": false
+  },
+  {
+    "id": "x11",
+    "city": "西安",
+    "name": "回民街",
+    "category": "美食",
+    "open_time": "09:00",
+    "close_time": "23:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "中午",
+      "晚上"
+    ],
+    "tags": [
+      "小吃",
+      "免费",
+      "步行",
+      "热闹"
+    ],
+    "lat": 34.265,
+    "lng": 108.94,
+    "indoor": false
+  },
+  {
+    "id": "x12",
+    "city": "西安",
+    "name": "永兴坊",
+    "category": "美食",
+    "open_time": "10:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "中午",
+      "晚上"
+    ],
+    "tags": [
+      "小吃",
+      "非遗",
+      "免费",
+      "室内外混合"
+    ],
+    "lat": 34.266,
+    "lng": 108.956,
+    "indoor": false
+  },
+  {
+    "id": "x13",
+    "city": "西安",
+    "name": "大唐芙蓉园",
+    "category": "亲子",
+    "open_time": "09:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 120,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "演出",
+      "夜景",
+      "亲子",
+      "需半天"
+    ],
+    "lat": 34.213,
+    "lng": 108.97,
+    "indoor": false
+  },
+  {
+    "id": "x14",
+    "city": "西安",
+    "name": "陕西考古博物馆",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 150,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "需预约",
+      "亲子"
+    ],
+    "lat": 34.13,
+    "lng": 108.87,
+    "indoor": true
+  },
+  {
+    "id": "x15",
+    "city": "西安",
+    "name": "小南门早市",
+    "category": "美食",
+    "open_time": "06:00",
+    "close_time": "09:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "小吃",
+      "市井",
+      "免费",
+      "需早到"
+    ],
+    "lat": 34.253,
+    "lng": 108.938,
+    "indoor": false
+  },
+  {
+    "id": "x16",
+    "city": "西安",
+    "name": "华山",
+    "category": "自然",
+    "open_time": "07:00",
+    "close_time": "19:00",
+    "closed_days": [],
+    "duration_min": 300,
+    "ticket_price": 160,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "爬山",
+      "体力消耗大",
+      "老人不宜",
+      "需半天",
+      "索道"
+    ],
+    "lat": 34.483,
+    "lng": 110.087,
+    "indoor": false
+  },
+  {
+    "id": "x17",
+    "city": "西安",
+    "name": "秦岭野生动物园",
+    "category": "自然",
+    "open_time": "08:30",
+    "close_time": "17:30",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 100,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "自然",
+      "亲子",
+      "动物",
+      "户外",
+      "老人友好"
+    ],
+    "lat": 34.032,
+    "lng": 108.864,
+    "indoor": false
+  },
+  {
+    "id": "m01",
+    "city": "厦门",
+    "name": "鼓浪屿",
+    "category": "人文",
+    "open_time": "07:00",
+    "close_time": "21:00",
+    "closed_days": [],
+    "duration_min": 240,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "轮渡",
+      "需半天",
+      "步行多",
+      "世界遗产"
+    ],
+    "lat": 24.447,
+    "lng": 118.067,
+    "indoor": false
+  },
+  {
+    "id": "m02",
+    "city": "厦门",
+    "name": "厦门大学",
+    "category": "人文",
+    "open_time": "12:00",
+    "close_time": "17:30",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午"
+    ],
+    "tags": [
+      "校园",
+      "免费",
+      "需预约",
+      "拍照"
+    ],
+    "lat": 24.438,
+    "lng": 118.096,
+    "indoor": false
+  },
+  {
+    "id": "m03",
+    "city": "厦门",
+    "name": "南普陀寺",
+    "category": "人文",
+    "open_time": "04:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "寺院",
+      "免费",
+      "素斋",
+      "老人友好"
+    ],
+    "lat": 24.441,
+    "lng": 118.093,
+    "indoor": false
+  },
+  {
+    "id": "m04",
+    "city": "厦门",
+    "name": "环岛路",
+    "category": "自然",
+    "open_time": "06:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "海岸线",
+      "骑行",
+      "免费",
+      "老人友好"
+    ],
+    "lat": 24.43,
+    "lng": 118.14,
+    "indoor": false
+  },
+  {
+    "id": "m05",
+    "city": "厦门",
+    "name": "曾厝垵",
+    "category": "美食",
+    "open_time": "09:00",
+    "close_time": "23:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "中午",
+      "晚上"
+    ],
+    "tags": [
+      "小吃",
+      "文创",
+      "免费",
+      "热闹"
+    ],
+    "lat": 24.432,
+    "lng": 118.12,
+    "indoor": false
+  },
+  {
+    "id": "m06",
+    "city": "厦门",
+    "name": "胡里山炮台",
+    "category": "人文",
+    "open_time": "07:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 25,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "历史",
+      "海防",
+      "表演",
+      "老人友好"
+    ],
+    "lat": 24.439,
+    "lng": 118.108,
+    "indoor": false
+  },
+  {
+    "id": "m07",
+    "city": "厦门",
+    "name": "厦门科技馆",
+    "category": "亲子",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 150,
+    "ticket_price": 100,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "亲子",
+      "互动"
+    ],
+    "lat": 24.479,
+    "lng": 118.09,
+    "indoor": true
+  },
+  {
+    "id": "m08",
+    "city": "厦门",
+    "name": "中山路步行街",
+    "category": "购物",
+    "open_time": "09:00",
+    "close_time": "23:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "骑楼",
+      "购物",
+      "免费",
+      "夜景"
+    ],
+    "lat": 24.453,
+    "lng": 118.082,
+    "indoor": false
+  },
+  {
+    "id": "m09",
+    "city": "厦门",
+    "name": "集美学村",
+    "category": "人文",
+    "open_time": "08:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "建筑",
+      "免费",
+      "安静",
+      "老人友好"
+    ],
+    "lat": 24.575,
+    "lng": 118.098,
+    "indoor": false
+  },
+  {
+    "id": "m10",
+    "city": "厦门",
+    "name": "五缘湾湿地公园",
+    "category": "自然",
+    "open_time": "06:00",
+    "close_time": "20:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "湿地",
+      "免费",
+      "慢节奏",
+      "亲子"
+    ],
+    "lat": 24.525,
+    "lng": 118.172,
+    "indoor": false
+  },
+  {
+    "id": "m11",
+    "city": "厦门",
+    "name": "厦门园林植物园",
+    "category": "自然",
+    "open_time": "06:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 150,
+    "ticket_price": 40,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "植物",
+      "拍照",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 24.452,
+    "lng": 118.106,
+    "indoor": false
+  },
+  {
+    "id": "m12",
+    "city": "厦门",
+    "name": "沙坡尾",
+    "category": "文创",
+    "open_time": "10:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "文创",
+      "免费",
+      "拍照",
+      "年轻人"
+    ],
+    "lat": 24.442,
+    "lng": 118.087,
+    "indoor": false
+  },
+  {
+    "id": "b01",
+    "city": "北京",
+    "name": "故宫博物院",
+    "category": "人文",
+    "open_time": "08:30",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 240,
+    "ticket_price": 60,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "世界遗产",
+      "需半天",
+      "需预约",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 39.9163,
+    "lng": 116.3972,
+    "indoor": false
+  },
+  {
+    "id": "b02",
+    "city": "北京",
+    "name": "天安门广场",
+    "category": "城市",
+    "open_time": "05:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "晚上"
+    ],
+    "tags": [
+      "地标",
+      "免费",
+      "需预约",
+      "开阔"
+    ],
+    "lat": 39.9055,
+    "lng": 116.3976,
+    "indoor": false
+  },
+  {
+    "id": "b03",
+    "city": "北京",
+    "name": "八达岭长城",
+    "category": "自然",
+    "open_time": "07:30",
+    "close_time": "17:30",
+    "closed_days": [],
+    "duration_min": 240,
+    "ticket_price": 40,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "世界遗产",
+      "爬山",
+      "体力消耗大",
+      "老人不宜",
+      "需半天"
+    ],
+    "lat": 40.3586,
+    "lng": 116.0169,
+    "indoor": false
+  },
+  {
+    "id": "b04",
+    "city": "北京",
+    "name": "颐和园",
+    "category": "人文",
+    "open_time": "06:30",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 180,
+    "ticket_price": 30,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "皇家园林",
+      "湖景",
+      "步行多",
+      "老人慎选"
+    ],
+    "lat": 39.9999,
+    "lng": 116.2755,
+    "indoor": false
+  },
+  {
+    "id": "b05",
+    "city": "北京",
+    "name": "天坛公园",
+    "category": "人文",
+    "open_time": "06:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 34,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "世界遗产",
+      "古建",
+      "老人友好",
+      "开阔"
+    ],
+    "lat": 39.8822,
+    "lng": 116.4066,
+    "indoor": false
+  },
+  {
+    "id": "b06",
+    "city": "北京",
+    "name": "中国国家博物馆",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [
+      0
+    ],
+    "duration_min": 180,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "室内",
+      "雨天友好",
+      "免费",
+      "需预约",
+      "老人友好"
+    ],
+    "lat": 39.905,
+    "lng": 116.401,
+    "indoor": true
+  },
+  {
+    "id": "b07",
+    "city": "北京",
+    "name": "南锣鼓巷",
+    "category": "美食",
+    "open_time": "09:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "小吃",
+      "胡同",
+      "免费",
+      "热闹"
+    ],
+    "lat": 39.937,
+    "lng": 116.403,
+    "indoor": false
+  },
+  {
+    "id": "b08",
+    "city": "北京",
+    "name": "什刹海",
+    "category": "休闲",
+    "open_time": "06:00",
+    "close_time": "22:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午",
+      "晚上"
+    ],
+    "tags": [
+      "湖景",
+      "免费",
+      "慢节奏",
+      "夜景"
+    ],
+    "lat": 39.94,
+    "lng": 116.386,
+    "indoor": false
+  },
+  {
+    "id": "b09",
+    "city": "北京",
+    "name": "798 艺术区",
+    "category": "文创",
+    "open_time": "10:00",
+    "close_time": "18:00",
+    "closed_days": [],
+    "duration_min": 120,
+    "ticket_price": 0,
+    "recommended_slot": [
+      "下午"
+    ],
+    "tags": [
+      "当代艺术",
+      "免费",
+      "拍照",
+      "年轻人"
+    ],
+    "lat": 39.9842,
+    "lng": 116.495,
+    "indoor": false
+  },
+  {
+    "id": "b10",
+    "city": "北京",
+    "name": "雍和宫",
+    "category": "人文",
+    "open_time": "09:00",
+    "close_time": "16:30",
+    "closed_days": [],
+    "duration_min": 90,
+    "ticket_price": 25,
+    "recommended_slot": [
+      "上午"
+    ],
+    "tags": [
+      "寺院",
+      "藏传佛教",
+      "安静",
+      "老人友好"
+    ],
+    "lat": 39.947,
+    "lng": 116.417,
+    "indoor": false
+  },
+  {
+    "id": "b11",
+    "city": "北京",
+    "name": "景山公园",
+    "category": "自然",
+    "open_time": "06:00",
+    "close_time": "21:00",
+    "closed_days": [],
+    "duration_min": 60,
+    "ticket_price": 2,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "俯瞰故宫",
+      "登高",
+      "老人慎选"
+    ],
+    "lat": 39.928,
+    "lng": 116.394,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-1",
+    "city": "上海",
+    "name": "南京路步行街",
+    "category": "购物相关场所",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "购物服务",
+      "购物相关场所",
+      "购物相关场所",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.235983,
+    "lng": 121.479494,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-2",
+    "city": "上海",
+    "name": "外滩",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.233516,
+    "lng": 121.492127,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-3",
+    "city": "上海",
+    "name": "上海豫园",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.227714,
+    "lng": 121.492497,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-4",
+    "city": "上海",
+    "name": "上海人民广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.228827,
+    "lng": 121.475213,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-5",
+    "city": "上海",
+    "name": "上海新天地",
+    "category": "步行街",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "购物服务",
+      "特色商业街",
+      "步行街",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.220351,
+    "lng": 121.474491,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-上海-6",
+    "city": "上海",
+    "name": "东方明珠广播电视塔",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.239703,
+    "lng": 121.499718,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-上海-7",
+    "city": "上海",
+    "name": "上海博物馆(人民广场馆)",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.228231,
+    "lng": 121.47548,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-上海-8",
+    "city": "上海",
+    "name": "上海自然博物馆",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.235021,
+    "lng": 121.462672,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-1",
+    "city": "广州",
+    "name": "越秀公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.140096,
+    "lng": 113.265561,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-广州-2",
+    "city": "广州",
+    "name": "三元宫",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.134993,
+    "lng": 113.263246,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-3",
+    "city": "广州",
+    "name": "大佛寺",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.122373,
+    "lng": 113.268027,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-4",
+    "city": "广州",
+    "name": "中山纪念堂",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "纪念馆|风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.13286,
+    "lng": 113.264692,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-5",
+    "city": "广州",
+    "name": "流花湖公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.137289,
+    "lng": 113.251095,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-广州-6",
+    "city": "广州",
+    "name": "南越王博物院(王墓展区)",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.137823,
+    "lng": 113.261015,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-7",
+    "city": "广州",
+    "name": "光孝寺",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.129347,
+    "lng": 113.256587,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-广州-8",
+    "city": "广州",
+    "name": "沙面岛",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 23.106802,
+    "lng": 113.244707,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-1",
+    "city": "深圳",
+    "name": "莲花山公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.553594,
+    "lng": 114.058673,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-2",
+    "city": "深圳",
+    "name": "市民广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.541525,
+    "lng": 114.05961,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-3",
+    "city": "深圳",
+    "name": "深圳博物馆新馆",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.543674,
+    "lng": 114.061704,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-深圳-4",
+    "city": "深圳",
+    "name": "莲花山公园-邓小平雕像",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.553197,
+    "lng": 114.05947,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-5",
+    "city": "深圳",
+    "name": "深圳中心公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.542341,
+    "lng": 114.079473,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-6",
+    "city": "深圳",
+    "name": "莲花山公园山顶广场",
+    "category": "公园广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.553186,
+    "lng": 114.059469,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-7",
+    "city": "深圳",
+    "name": "笔架山公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.562893,
+    "lng": 114.080876,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-深圳-8",
+    "city": "深圳",
+    "name": "莲花山公园风筝广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 22.549422,
+    "lng": 114.05991,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-1",
+    "city": "重庆",
+    "name": "上清寺",
+    "category": "旅游景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜相关",
+      "旅游景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.558589,
+    "lng": 106.545885,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-重庆-2",
+    "city": "重庆",
+    "name": "洪崖洞民俗风貌区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.562204,
+    "lng": 106.579027,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-3",
+    "city": "重庆",
+    "name": "重庆中国三峡博物馆",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.562014,
+    "lng": 106.550513,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-重庆-4",
+    "city": "重庆",
+    "name": "重庆市人民大礼堂",
+    "category": "会展中心",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "会展中心",
+      "会展中心",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.561674,
+    "lng": 106.553277,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-5",
+    "city": "重庆",
+    "name": "鹅岭公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.549688,
+    "lng": 106.536235,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-6",
+    "city": "重庆",
+    "name": "重庆十八梯传统风貌区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.551015,
+    "lng": 106.573042,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-7",
+    "city": "重庆",
+    "name": "魁星楼",
+    "category": "旅游景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜相关",
+      "旅游景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.560258,
+    "lng": 106.573618,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-重庆-8",
+    "city": "重庆",
+    "name": "洪崖洞夜景观景台",
+    "category": "观景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "观景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 29.562321,
+    "lng": 106.579169,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-1",
+    "city": "杭州",
+    "name": "钱江世纪公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.244685,
+    "lng": 120.237194,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-2",
+    "city": "杭州",
+    "name": "清河坊历史文化特色街区",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.239827,
+    "lng": 120.169899,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-3",
+    "city": "杭州",
+    "name": "五柳巷历史街区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.242162,
+    "lng": 120.176615,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-4",
+    "city": "杭州",
+    "name": "湖滨步行街",
+    "category": "步行街",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "购物服务",
+      "特色商业街",
+      "步行街",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.254158,
+    "lng": 120.162923,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-5",
+    "city": "杭州",
+    "name": "胡雪岩旧居",
+    "category": "纪念馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "纪念馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.237273,
+    "lng": 120.172906,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-杭州-6",
+    "city": "杭州",
+    "name": "吴山景区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.23412,
+    "lng": 120.165134,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-7",
+    "city": "杭州",
+    "name": "清河坊步行街",
+    "category": "步行街",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "购物服务",
+      "特色商业街",
+      "步行街",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.240073,
+    "lng": 120.168923,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-杭州-8",
+    "city": "杭州",
+    "name": "钱江新城灯光秀",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.244481,
+    "lng": 120.215428,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-1",
+    "city": "南京",
+    "name": "古鸡鸣寺",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.061061,
+    "lng": 118.795246,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-南京-2",
+    "city": "南京",
+    "name": "玄武湖景区",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.069455,
+    "lng": 118.812688,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-3",
+    "city": "南京",
+    "name": "总统府",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.044228,
+    "lng": 118.797398,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-4",
+    "city": "南京",
+    "name": "夫子庙秦淮风光带",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.020699,
+    "lng": 118.788972,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-5",
+    "city": "南京",
+    "name": "南京城墙台城景区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.061269,
+    "lng": 118.803085,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-6",
+    "city": "南京",
+    "name": "明孝陵景区",
+    "category": "世界遗产",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "世界遗产",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.051926,
+    "lng": 118.840463,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-南京-7",
+    "city": "南京",
+    "name": "南京博物院",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.040802,
+    "lng": 118.825064,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-南京-8",
+    "city": "南京",
+    "name": "南京城墙景区(神策门至太平门)",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 32.062723,
+    "lng": 118.79626,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-1",
+    "city": "苏州",
+    "name": "西园戒幢律寺",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.314823,
+    "lng": 120.587334,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-苏州-2",
+    "city": "苏州",
+    "name": "七里山塘景区",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.317059,
+    "lng": 120.602105,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-3",
+    "city": "苏州",
+    "name": "寒山寺",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.310469,
+    "lng": 120.568391,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-苏州-4",
+    "city": "苏州",
+    "name": "留园",
+    "category": "世界遗产",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "世界遗产",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.315369,
+    "lng": 120.59226,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-5",
+    "city": "苏州",
+    "name": "苏州市枫桥风景名胜区",
+    "category": "省级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "省级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.309475,
+    "lng": 120.568304,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-6",
+    "city": "苏州",
+    "name": "石路步行街",
+    "category": "步行街",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "购物服务",
+      "特色商业街",
+      "步行街",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.312356,
+    "lng": 120.601762,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-7",
+    "city": "苏州",
+    "name": "平江路",
+    "category": "特色商业街",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点|购物服务",
+      "特色商业街",
+      "特色商业街",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.313969,
+    "lng": 120.634556,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-苏州-8",
+    "city": "苏州",
+    "name": "虎丘山风景区",
+    "category": "世界遗产",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "世界遗产",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 31.334584,
+    "lng": 120.580016,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-1",
+    "city": "武汉",
+    "name": "巴公房子",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.586141,
+    "lng": 114.299831,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-2",
+    "city": "武汉",
+    "name": "汉口江滩",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.610162,
+    "lng": 114.319404,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-3",
+    "city": "武汉",
+    "name": "咸安坊",
+    "category": "美容美发店",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜|公司企业",
+      "公司",
+      "公司|生活服务",
+      "美容美发店",
+      "美容美发店",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.582745,
+    "lng": 114.295924,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-4",
+    "city": "武汉",
+    "name": "解放公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.608418,
+    "lng": 114.298029,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-5",
+    "city": "武汉",
+    "name": "武昌江滩",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.588254,
+    "lng": 114.323074,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-6",
+    "city": "武汉",
+    "name": "汉口江滩2期",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.599736,
+    "lng": 114.312401,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-武汉-7",
+    "city": "武汉",
+    "name": "江汉关博物馆",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.576075,
+    "lng": 114.297308,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-武汉-8",
+    "city": "武汉",
+    "name": "武汉江滩1期(沿江大道)",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 30.586382,
+    "lng": 114.304195,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-1",
+    "city": "长沙",
+    "name": "橘子洲风景名胜区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.196505,
+    "lng": 112.963081,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-2",
+    "city": "长沙",
+    "name": "五一广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.1965,
+    "lng": 112.97734,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-3",
+    "city": "长沙",
+    "name": "岳麓山风景名胜区",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.183601,
+    "lng": 112.936104,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-4",
+    "city": "长沙",
+    "name": "咸嘉湖景区",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.209154,
+    "lng": 112.941743,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-5",
+    "city": "长沙",
+    "name": "潮宗街区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.202487,
+    "lng": 112.974319,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-6",
+    "city": "长沙",
+    "name": "太平老街历史文化街区",
+    "category": "旅游景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜相关",
+      "旅游景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.193573,
+    "lng": 112.972071,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-长沙-7",
+    "city": "长沙",
+    "name": "古开福寺",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.224436,
+    "lng": 112.97834,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-长沙-8",
+    "city": "长沙",
+    "name": "湖南省博物馆",
+    "category": "博物馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "科教文化服务",
+      "博物馆",
+      "博物馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 28.211876,
+    "lng": 112.993499,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-青岛-1",
+    "city": "青岛",
+    "name": "五四广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.06274,
+    "lng": 120.384576,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-2",
+    "city": "青岛",
+    "name": "青岛奥帆海洋文化旅游区",
+    "category": "国家级景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "国家级景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.060279,
+    "lng": 120.3905,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-3",
+    "city": "青岛",
+    "name": "奥林匹克帆船中心·奥帆海洋文化旅游区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.054643,
+    "lng": 120.395063,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-4",
+    "city": "青岛",
+    "name": "八大关风景区",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.053625,
+    "lng": 120.350903,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-5",
+    "city": "青岛",
+    "name": "青岛湛山寺",
+    "category": "寺庙道观",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "寺庙道观",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.064978,
+    "lng": 120.36449,
+    "indoor": true
+  },
+  {
+    "id": "demo-poi-青岛-6",
+    "city": "青岛",
+    "name": "太平山中央公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.067606,
+    "lng": 120.357684,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-7",
+    "city": "青岛",
+    "name": "情人坝",
+    "category": "风景名胜",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜",
+      "风景名胜",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.052388,
+    "lng": 120.390288,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-青岛-8",
+    "city": "青岛",
+    "name": "青岛中山公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 36.064394,
+    "lng": 120.350415,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-1",
+    "city": "昆明",
+    "name": "洛龙公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.89031,
+    "lng": 102.819208,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-2",
+    "city": "昆明",
+    "name": "白龙潭公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.878244,
+    "lng": 102.848863,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-3",
+    "city": "昆明",
+    "name": "春融公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.887049,
+    "lng": 102.831796,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-4",
+    "city": "昆明",
+    "name": "昆明呈贡区城中心广场",
+    "category": "城市广场",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "城市广场",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.888339,
+    "lng": 102.7991,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-5",
+    "city": "昆明",
+    "name": "昆明呈贡中央公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.874177,
+    "lng": 102.830315,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-6",
+    "city": "昆明",
+    "name": "斗南七彩花海",
+    "category": "旅游景点",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "风景名胜相关",
+      "旅游景点",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.892304,
+    "lng": 102.773428,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-7",
+    "city": "昆明",
+    "name": "昆明海趣花都海洋世界",
+    "category": "水族馆",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "水族馆",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.902063,
+    "lng": 102.789781,
+    "indoor": false
+  },
+  {
+    "id": "demo-poi-昆明-8",
+    "city": "昆明",
+    "name": "春城公园",
+    "category": "公园",
+    "open_time": "09:00",
+    "close_time": "17:00",
+    "closed_days": [],
+    "ticket_price": 0,
+    "recommended_slot": [
+      "上午",
+      "下午"
+    ],
+    "tags": [
+      "风景名胜",
+      "公园广场",
+      "公园",
+      "演示数据",
+      "游览时长待估算"
+    ],
+    "lat": 24.877869,
+    "lng": 102.830082,
+    "indoor": false
+  }
 ]
-

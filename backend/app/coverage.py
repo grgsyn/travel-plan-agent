@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import os
-from functools import lru_cache
 from pathlib import Path
 
 from .models import TripBrief
@@ -13,7 +12,6 @@ from .settings import AppSettings
 COVERAGE_PATH = Path(__file__).resolve().parents[1] / "data" / "mock" / "coverage.json"
 
 
-@lru_cache(maxsize=1)
 def _load() -> dict:
     return json.loads(COVERAGE_PATH.read_text(encoding="utf-8"))
 

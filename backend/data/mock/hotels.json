@@ -1,31 +1,1340 @@
 [
-  {"id": "h1", "name": "春熙路亚朵酒店", "district": "春熙路", "price_per_night": 520, "rating": 4.6, "tags": ["地铁近", "老人友好", "早餐好"], "distance_to_center_km": 0.5, "lat": 30.6524, "lng": 104.0817},
-  {"id": "h2", "name": "宽窄巷子隐栖堂", "district": "宽窄巷子", "price_per_night": 780, "rating": 4.7, "tags": ["精品", "安静", "近景点"], "distance_to_center_km": 1.2, "lat": 30.6697, "lng": 104.0559},
-  {"id": "h3", "name": "锦江宾馆", "district": "人民南路", "price_per_night": 620, "rating": 4.5, "tags": ["老牌", "房间大", "老人友好"], "distance_to_center_km": 2.0, "lat": 30.6570, "lng": 104.0658},
-  {"id": "h4", "name": "环球中心洲际酒店", "district": "高新区", "price_per_night": 1080, "rating": 4.8, "tags": ["亲子", "泳池", "商场一体"], "distance_to_center_km": 8.5, "lat": 30.5720, "lng": 104.0640},
-  {"id": "h5", "name": "春熙里和颐", "district": "春熙路", "price_per_night": 260, "rating": 4.2, "tags": ["经济", "地铁近"], "distance_to_center_km": 0.8, "lat": 30.6530, "lng": 104.0800},
-  {"id": "h6", "name": "青城山下道隐民宿", "district": "都江堰", "price_per_night": 460, "rating": 4.4, "tags": ["山景", "安静", "适合休整"], "distance_to_center_km": 55.0, "lat": 30.8997, "lng": 103.5722},
-
-  {"id": "xa1", "city": "西安", "name": "西安钟楼饭店", "district": "碑林区", "price_per_night": 420, "rating": 4.4, "tags": ["地铁近", "老牌", "近钟楼"], "distance_to_center_km": 0.3, "lat": 34.2610, "lng": 108.9450},
-  {"id": "xa2", "city": "西安", "name": "西安威斯汀大酒店", "district": "曲江新区", "price_per_night": 1180, "rating": 4.8, "tags": ["高端", "近大唐不夜城", "泳池"], "distance_to_center_km": 7.8, "lat": 34.2118, "lng": 108.9670},
-  {"id": "xa3", "city": "西安", "name": "亚朵酒店(大雁塔店)", "district": "雁塔区", "price_per_night": 480, "rating": 4.6, "tags": ["近景点", "安静", "早餐好"], "distance_to_center_km": 5.6, "lat": 34.2205, "lng": 108.9555},
-  {"id": "xa4", "city": "西安", "name": "如家精选(钟楼地铁站店)", "district": "碑林区", "price_per_night": 260, "rating": 4.1, "tags": ["经济", "地铁近"], "distance_to_center_km": 0.6, "lat": 34.2593, "lng": 108.9438},
-  {"id": "xa5", "city": "西安", "name": "西安W酒店", "district": "曲江新区", "price_per_night": 1420, "rating": 4.7, "tags": ["设计感", "夜景", "亲子"], "distance_to_center_km": 8.2, "lat": 34.2085, "lng": 108.9720},
-  {"id": "xa6", "city": "西安", "name": "汉庭酒店(火车站店)", "district": "新城区", "price_per_night": 210, "rating": 4.0, "tags": ["经济", "近车站"], "distance_to_center_km": 3.1, "lat": 34.2780, "lng": 108.9650},
-  {"id": "xa7", "city": "西安", "name": "西安索菲特人民大厦", "district": "新城区", "price_per_night": 720, "rating": 4.5, "tags": ["老牌", "花园", "房间大"], "distance_to_center_km": 1.8, "lat": 34.2700, "lng": 108.9520},
-
-  {"id": "xm1", "city": "厦门", "name": "厦门鼓浪屿海上花园酒店", "district": "鼓浪屿", "price_per_night": 980, "rating": 4.7, "tags": ["海景", "近轮渡", "安静"], "distance_to_center_km": 3.4, "lat": 24.4462, "lng": 118.0663},
-  {"id": "xm2", "city": "厦门", "name": "厦门康莱德酒店", "district": "思明区", "price_per_night": 1280, "rating": 4.8, "tags": ["高端", "海景", "泳池"], "distance_to_center_km": 1.6, "lat": 24.4790, "lng": 118.1240},
-  {"id": "xm3", "city": "厦门", "name": "亚朵酒店(中山路店)", "district": "思明区", "price_per_night": 520, "rating": 4.6, "tags": ["步行街", "地铁近", "早餐好"], "distance_to_center_km": 0.7, "lat": 24.4525, "lng": 118.0835},
-  {"id": "xm4", "city": "厦门", "name": "鹭江宾馆", "district": "思明区", "price_per_night": 760, "rating": 4.5, "tags": ["老牌", "海景", "近轮渡"], "distance_to_center_km": 0.4, "lat": 24.4537, "lng": 118.0790},
-  {"id": "xm5", "city": "厦门", "name": "如家酒店(厦大店)", "district": "思明区", "price_per_night": 240, "rating": 4.0, "tags": ["经济", "近厦大"], "distance_to_center_km": 2.8, "lat": 24.4392, "lng": 118.0925},
-  {"id": "xm6", "city": "厦门", "name": "厦门万丽酒店", "district": "湖里区", "price_per_night": 880, "rating": 4.6, "tags": ["亲子", "泳池", "商场一体"], "distance_to_center_km": 6.5, "lat": 24.5120, "lng": 118.1680},
-  {"id": "xm7", "city": "厦门", "name": "汉庭酒店(火车站店)", "district": "思明区", "price_per_night": 220, "rating": 3.9, "tags": ["经济", "交通方便"], "distance_to_center_km": 3.9, "lat": 24.4680, "lng": 118.1030},
-
-  {"id": "bj1", "city": "北京", "name": "北京饭店", "district": "东城区", "price_per_night": 1080, "rating": 4.6, "tags": ["老牌", "近天安门", "房间大"], "distance_to_center_km": 0.9, "lat": 39.9088, "lng": 116.4010},
-  {"id": "bj2", "city": "北京", "name": "王府井希尔顿酒店", "district": "东城区", "price_per_night": 1380, "rating": 4.7, "tags": ["高端", "购物方便", "泳池"], "distance_to_center_km": 1.3, "lat": 39.9152, "lng": 116.4105},
-  {"id": "bj3", "city": "北京", "name": "亚朵酒店(前门店)", "district": "西城区", "price_per_night": 620, "rating": 4.6, "tags": ["近景点", "安静", "早餐好"], "distance_to_center_km": 1.8, "lat": 39.8990, "lng": 116.3980},
-  {"id": "bj4", "city": "北京", "name": "如家精选(西单店)", "district": "西城区", "price_per_night": 320, "rating": 4.1, "tags": ["经济", "地铁近"], "distance_to_center_km": 2.4, "lat": 39.9130, "lng": 116.3740},
-  {"id": "bj5", "city": "北京", "name": "北京瑰丽酒店", "district": "朝阳区", "price_per_night": 1680, "rating": 4.8, "tags": ["高端", "设计感", "泳池"], "distance_to_center_km": 5.6, "lat": 39.9255, "lng": 116.4610},
-  {"id": "bj6", "city": "北京", "name": "汉庭酒店(国贸店)", "district": "朝阳区", "price_per_night": 280, "rating": 4.0, "tags": ["经济", "近商务区"], "distance_to_center_km": 6.8, "lat": 39.9085, "lng": 116.4590}
+  {
+    "id": "h1",
+    "name": "春熙路亚朵酒店",
+    "district": "春熙路",
+    "price_per_night": 520,
+    "rating": 4.6,
+    "tags": [
+      "地铁近",
+      "老人友好",
+      "早餐好"
+    ],
+    "distance_to_center_km": 0.5,
+    "lat": 30.6524,
+    "lng": 104.0817
+  },
+  {
+    "id": "h2",
+    "name": "宽窄巷子隐栖堂",
+    "district": "宽窄巷子",
+    "price_per_night": 780,
+    "rating": 4.7,
+    "tags": [
+      "精品",
+      "安静",
+      "近景点"
+    ],
+    "distance_to_center_km": 1.2,
+    "lat": 30.6697,
+    "lng": 104.0559
+  },
+  {
+    "id": "h3",
+    "name": "锦江宾馆",
+    "district": "人民南路",
+    "price_per_night": 620,
+    "rating": 4.5,
+    "tags": [
+      "老牌",
+      "房间大",
+      "老人友好"
+    ],
+    "distance_to_center_km": 2.0,
+    "lat": 30.657,
+    "lng": 104.0658
+  },
+  {
+    "id": "h4",
+    "name": "环球中心洲际酒店",
+    "district": "高新区",
+    "price_per_night": 1080,
+    "rating": 4.8,
+    "tags": [
+      "亲子",
+      "泳池",
+      "商场一体"
+    ],
+    "distance_to_center_km": 8.5,
+    "lat": 30.572,
+    "lng": 104.064
+  },
+  {
+    "id": "h5",
+    "name": "春熙里和颐",
+    "district": "春熙路",
+    "price_per_night": 260,
+    "rating": 4.2,
+    "tags": [
+      "经济",
+      "地铁近"
+    ],
+    "distance_to_center_km": 0.8,
+    "lat": 30.653,
+    "lng": 104.08
+  },
+  {
+    "id": "h6",
+    "name": "青城山下道隐民宿",
+    "district": "都江堰",
+    "price_per_night": 460,
+    "rating": 4.4,
+    "tags": [
+      "山景",
+      "安静",
+      "适合休整"
+    ],
+    "distance_to_center_km": 55.0,
+    "lat": 30.8997,
+    "lng": 103.5722
+  },
+  {
+    "id": "xa1",
+    "city": "西安",
+    "name": "西安钟楼饭店",
+    "district": "碑林区",
+    "price_per_night": 420,
+    "rating": 4.4,
+    "tags": [
+      "地铁近",
+      "老牌",
+      "近钟楼"
+    ],
+    "distance_to_center_km": 0.3,
+    "lat": 34.261,
+    "lng": 108.945
+  },
+  {
+    "id": "xa2",
+    "city": "西安",
+    "name": "西安威斯汀大酒店",
+    "district": "曲江新区",
+    "price_per_night": 1180,
+    "rating": 4.8,
+    "tags": [
+      "高端",
+      "近大唐不夜城",
+      "泳池"
+    ],
+    "distance_to_center_km": 7.8,
+    "lat": 34.2118,
+    "lng": 108.967
+  },
+  {
+    "id": "xa3",
+    "city": "西安",
+    "name": "亚朵酒店(大雁塔店)",
+    "district": "雁塔区",
+    "price_per_night": 480,
+    "rating": 4.6,
+    "tags": [
+      "近景点",
+      "安静",
+      "早餐好"
+    ],
+    "distance_to_center_km": 5.6,
+    "lat": 34.2205,
+    "lng": 108.9555
+  },
+  {
+    "id": "xa4",
+    "city": "西安",
+    "name": "如家精选(钟楼地铁站店)",
+    "district": "碑林区",
+    "price_per_night": 260,
+    "rating": 4.1,
+    "tags": [
+      "经济",
+      "地铁近"
+    ],
+    "distance_to_center_km": 0.6,
+    "lat": 34.2593,
+    "lng": 108.9438
+  },
+  {
+    "id": "xa5",
+    "city": "西安",
+    "name": "西安W酒店",
+    "district": "曲江新区",
+    "price_per_night": 1420,
+    "rating": 4.7,
+    "tags": [
+      "设计感",
+      "夜景",
+      "亲子"
+    ],
+    "distance_to_center_km": 8.2,
+    "lat": 34.2085,
+    "lng": 108.972
+  },
+  {
+    "id": "xa6",
+    "city": "西安",
+    "name": "汉庭酒店(火车站店)",
+    "district": "新城区",
+    "price_per_night": 210,
+    "rating": 4.0,
+    "tags": [
+      "经济",
+      "近车站"
+    ],
+    "distance_to_center_km": 3.1,
+    "lat": 34.278,
+    "lng": 108.965
+  },
+  {
+    "id": "xa7",
+    "city": "西安",
+    "name": "西安索菲特人民大厦",
+    "district": "新城区",
+    "price_per_night": 720,
+    "rating": 4.5,
+    "tags": [
+      "老牌",
+      "花园",
+      "房间大"
+    ],
+    "distance_to_center_km": 1.8,
+    "lat": 34.27,
+    "lng": 108.952
+  },
+  {
+    "id": "xm1",
+    "city": "厦门",
+    "name": "厦门鼓浪屿海上花园酒店",
+    "district": "鼓浪屿",
+    "price_per_night": 980,
+    "rating": 4.7,
+    "tags": [
+      "海景",
+      "近轮渡",
+      "安静"
+    ],
+    "distance_to_center_km": 3.4,
+    "lat": 24.4462,
+    "lng": 118.0663
+  },
+  {
+    "id": "xm2",
+    "city": "厦门",
+    "name": "厦门康莱德酒店",
+    "district": "思明区",
+    "price_per_night": 1280,
+    "rating": 4.8,
+    "tags": [
+      "高端",
+      "海景",
+      "泳池"
+    ],
+    "distance_to_center_km": 1.6,
+    "lat": 24.479,
+    "lng": 118.124
+  },
+  {
+    "id": "xm3",
+    "city": "厦门",
+    "name": "亚朵酒店(中山路店)",
+    "district": "思明区",
+    "price_per_night": 520,
+    "rating": 4.6,
+    "tags": [
+      "步行街",
+      "地铁近",
+      "早餐好"
+    ],
+    "distance_to_center_km": 0.7,
+    "lat": 24.4525,
+    "lng": 118.0835
+  },
+  {
+    "id": "xm4",
+    "city": "厦门",
+    "name": "鹭江宾馆",
+    "district": "思明区",
+    "price_per_night": 760,
+    "rating": 4.5,
+    "tags": [
+      "老牌",
+      "海景",
+      "近轮渡"
+    ],
+    "distance_to_center_km": 0.4,
+    "lat": 24.4537,
+    "lng": 118.079
+  },
+  {
+    "id": "xm5",
+    "city": "厦门",
+    "name": "如家酒店(厦大店)",
+    "district": "思明区",
+    "price_per_night": 240,
+    "rating": 4.0,
+    "tags": [
+      "经济",
+      "近厦大"
+    ],
+    "distance_to_center_km": 2.8,
+    "lat": 24.4392,
+    "lng": 118.0925
+  },
+  {
+    "id": "xm6",
+    "city": "厦门",
+    "name": "厦门万丽酒店",
+    "district": "湖里区",
+    "price_per_night": 880,
+    "rating": 4.6,
+    "tags": [
+      "亲子",
+      "泳池",
+      "商场一体"
+    ],
+    "distance_to_center_km": 6.5,
+    "lat": 24.512,
+    "lng": 118.168
+  },
+  {
+    "id": "xm7",
+    "city": "厦门",
+    "name": "汉庭酒店(火车站店)",
+    "district": "思明区",
+    "price_per_night": 220,
+    "rating": 3.9,
+    "tags": [
+      "经济",
+      "交通方便"
+    ],
+    "distance_to_center_km": 3.9,
+    "lat": 24.468,
+    "lng": 118.103
+  },
+  {
+    "id": "bj1",
+    "city": "北京",
+    "name": "北京饭店",
+    "district": "东城区",
+    "price_per_night": 1080,
+    "rating": 4.6,
+    "tags": [
+      "老牌",
+      "近天安门",
+      "房间大"
+    ],
+    "distance_to_center_km": 0.9,
+    "lat": 39.9088,
+    "lng": 116.401
+  },
+  {
+    "id": "bj2",
+    "city": "北京",
+    "name": "王府井希尔顿酒店",
+    "district": "东城区",
+    "price_per_night": 1380,
+    "rating": 4.7,
+    "tags": [
+      "高端",
+      "购物方便",
+      "泳池"
+    ],
+    "distance_to_center_km": 1.3,
+    "lat": 39.9152,
+    "lng": 116.4105
+  },
+  {
+    "id": "bj3",
+    "city": "北京",
+    "name": "亚朵酒店(前门店)",
+    "district": "西城区",
+    "price_per_night": 620,
+    "rating": 4.6,
+    "tags": [
+      "近景点",
+      "安静",
+      "早餐好"
+    ],
+    "distance_to_center_km": 1.8,
+    "lat": 39.899,
+    "lng": 116.398
+  },
+  {
+    "id": "bj4",
+    "city": "北京",
+    "name": "如家精选(西单店)",
+    "district": "西城区",
+    "price_per_night": 320,
+    "rating": 4.1,
+    "tags": [
+      "经济",
+      "地铁近"
+    ],
+    "distance_to_center_km": 2.4,
+    "lat": 39.913,
+    "lng": 116.374
+  },
+  {
+    "id": "bj5",
+    "city": "北京",
+    "name": "北京瑰丽酒店",
+    "district": "朝阳区",
+    "price_per_night": 1680,
+    "rating": 4.8,
+    "tags": [
+      "高端",
+      "设计感",
+      "泳池"
+    ],
+    "distance_to_center_km": 5.6,
+    "lat": 39.9255,
+    "lng": 116.461
+  },
+  {
+    "id": "bj6",
+    "city": "北京",
+    "name": "汉庭酒店(国贸店)",
+    "district": "朝阳区",
+    "price_per_night": 280,
+    "rating": 4.0,
+    "tags": [
+      "经济",
+      "近商务区"
+    ],
+    "distance_to_center_km": 6.8,
+    "lat": 39.9085,
+    "lng": 116.459
+  },
+  {
+    "id": "demo-hotel-上海-1",
+    "city": "上海",
+    "name": "艾尚商务酒店(上海火车站店)",
+    "district": "普陀区",
+    "price_per_night": 430,
+    "rating": 3.6,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 3.6,
+    "lat": 31.25498,
+    "lng": 121.44873,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-上海-2",
+    "city": "上海",
+    "name": "登巴客栈(上海旗舰店)",
+    "district": "长宁区",
+    "price_per_night": 560,
+    "rating": 4.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.0,
+    "lat": 31.216636,
+    "lng": 121.435379,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-上海-3",
+    "city": "上海",
+    "name": "伍豪商务宾馆(上海第九人民医院奉城分院店)",
+    "district": "奉贤区",
+    "price_per_night": 670,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 38.5,
+    "lat": 30.912056,
+    "lng": 121.631828,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-上海-4",
+    "city": "上海",
+    "name": "大隐国际青年旅舍(上海陆家嘴滨江道店)",
+    "district": "浦东新区",
+    "price_per_night": 730,
+    "rating": 4.7,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 5.2,
+    "lat": 31.239356,
+    "lng": 121.527291,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-上海-5",
+    "city": "上海",
+    "name": "开蔓酒店(上海延吉中路地铁站店)",
+    "district": "杨浦区",
+    "price_per_night": 770,
+    "rating": 4.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 8.2,
+    "lat": 31.283959,
+    "lng": 121.532564,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-广州-1",
+    "city": "广州",
+    "name": "广州顺发民宿(广州火车站店)",
+    "district": "越秀区",
+    "price_per_night": 500,
+    "rating": 4.4,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.7,
+    "lat": 23.151245,
+    "lng": 113.253226,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-广州-2",
+    "city": "广州",
+    "name": "侣行家公寓(广州米酷店)",
+    "district": "天河区",
+    "price_per_night": 600,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 15.4,
+    "lat": 23.165497,
+    "lng": 113.409395,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-广州-3",
+    "city": "广州",
+    "name": "金港酒店(广州南沙进港大道店)",
+    "district": "南沙区",
+    "price_per_night": 580,
+    "rating": 3.7,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 46.9,
+    "lat": 22.800373,
+    "lng": 113.551882,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-广州-4",
+    "city": "广州",
+    "name": "广州名城酒店(从化碧桂园1960店)",
+    "district": "从化区",
+    "price_per_night": 740,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 57.3,
+    "lat": 23.549767,
+    "lng": 113.589244,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-广州-5",
+    "city": "广州",
+    "name": "品尚商务酒店",
+    "district": "白云区",
+    "price_per_night": 770,
+    "rating": 4.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 8.7,
+    "lat": 23.207134,
+    "lng": 113.264021,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-深圳-1",
+    "city": "深圳",
+    "name": "安于海青年公寓(海港大厦店)",
+    "district": "盐田区",
+    "price_per_night": 540,
+    "rating": 5.0,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 20.1,
+    "lat": 22.566075,
+    "lng": 114.251975,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-深圳-2",
+    "city": "深圳",
+    "name": "深圳民丰公寓",
+    "district": "龙华区",
+    "price_per_night": 450,
+    "rating": 3.0,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 7.2,
+    "lat": 22.604474,
+    "lng": 114.035269,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-深圳-3",
+    "city": "深圳",
+    "name": "龙联尚品酒店",
+    "district": "龙岗区",
+    "price_per_night": 670,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 25.0,
+    "lat": 22.692977,
+    "lng": 114.239825,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-深圳-4",
+    "city": "深圳",
+    "name": "星屿青年旅舍(南油地铁站店)",
+    "district": "南山区",
+    "price_per_night": 710,
+    "rating": 4.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 13.8,
+    "lat": 22.511025,
+    "lng": 113.928275,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-深圳-5",
+    "city": "深圳",
+    "name": "深圳平价住宿",
+    "district": "龙华区",
+    "price_per_night": 790,
+    "rating": 4.6,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 15.6,
+    "lat": 22.673362,
+    "lng": 114.001872,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-重庆-1",
+    "city": "重庆",
+    "name": "江畔假日酒店",
+    "district": "丰都县",
+    "price_per_night": 370,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 119.2,
+    "lat": 29.871596,
+    "lng": 107.734049,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-重庆-2",
+    "city": "重庆",
+    "name": "星豪鸿精品酒店(英利国际时代天街店)",
+    "district": "渝中区",
+    "price_per_night": 430,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.2,
+    "lat": 29.540376,
+    "lng": 106.516412,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-重庆-3",
+    "city": "重庆",
+    "name": "上阁酒店(新牌坊中渝广场店)",
+    "district": "两江新区",
+    "price_per_night": 490,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 5.2,
+    "lat": 29.59895,
+    "lng": 106.517926,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-重庆-4",
+    "city": "重庆",
+    "name": "徐州酒店(重庆大礼堂店)",
+    "district": "渝中区",
+    "price_per_night": 550,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 0.4,
+    "lat": 29.559979,
+    "lng": 106.552826,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-重庆-5",
+    "city": "重庆",
+    "name": "杰友酒店(开州新世纪百货店)",
+    "district": "开州区",
+    "price_per_night": 610,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 251.7,
+    "lat": 31.166771,
+    "lng": 108.402937,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-杭州-1",
+    "city": "杭州",
+    "name": "可见时光·望达斯旅舍(杭州西湖湖滨河坊街店)",
+    "district": "上城区",
+    "price_per_night": 320,
+    "rating": 4.2,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.0,
+    "lat": 30.239811,
+    "lng": 120.168087,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-杭州-2",
+    "city": "杭州",
+    "name": "一只小鹿酒店(杭州火车城站西湖湖滨浙二医院店)",
+    "district": "上城区",
+    "price_per_night": 420,
+    "rating": 4.7,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 3.6,
+    "lat": 30.249881,
+    "lng": 120.179457,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-杭州-3",
+    "city": "杭州",
+    "name": "布丁精选酒店(杭州武林广场西湖文化广场地铁站店)",
+    "district": "拱墅区",
+    "price_per_night": 470,
+    "rating": 4.6,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 0.5,
+    "lat": 30.278191,
+    "lng": 120.156187,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-杭州-4",
+    "city": "杭州",
+    "name": "布丁严选酒店(西湖文化广场地铁站店)",
+    "district": "拱墅区",
+    "price_per_night": 510,
+    "rating": 4.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 1.3,
+    "lat": 30.283129,
+    "lng": 120.163198,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-杭州-5",
+    "city": "杭州",
+    "name": "布丁严选酒店(杭州西湖武林广场建国北路地铁站店)",
+    "district": "拱墅区",
+    "price_per_night": 580,
+    "rating": 4.4,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.8,
+    "lat": 30.265451,
+    "lng": 120.18223,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-南京-1",
+    "city": "南京",
+    "name": "糖豆豆青年旅舍(南京南站双龙大道地铁站店)",
+    "district": "江宁区",
+    "price_per_night": 380,
+    "rating": 5.0,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 11.0,
+    "lat": 31.962981,
+    "lng": 118.818178,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-南京-2",
+    "city": "南京",
+    "name": "布丁酒店(南京仙林大学城店)",
+    "district": "栖霞区",
+    "price_per_night": 350,
+    "rating": 3.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 12.9,
+    "lat": 32.094203,
+    "lng": 118.928144,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-南京-3",
+    "city": "南京",
+    "name": "7天酒店(虹桥地铁站店)",
+    "district": "鼓楼区",
+    "price_per_night": 430,
+    "rating": 4.1,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.9,
+    "lat": 32.072947,
+    "lng": 118.770393,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-南京-4",
+    "city": "南京",
+    "name": "南京柚柚民宿(雨花台吾悦广场店)",
+    "district": "雨花台区",
+    "price_per_night": 550,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 21.2,
+    "lat": 31.912725,
+    "lng": 118.654275,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-南京-5",
+    "city": "南京",
+    "name": "南京流苏自助公寓(万达茂店)",
+    "district": "栖霞区",
+    "price_per_night": 580,
+    "rating": 4.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 19.3,
+    "lat": 32.120967,
+    "lng": 118.9888,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-苏州-1",
+    "city": "苏州",
+    "name": "常熟佳鑫时尚宾馆",
+    "district": "常熟市",
+    "price_per_night": 370,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 39.7,
+    "lat": 31.630071,
+    "lng": 120.741604,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-苏州-2",
+    "city": "苏州",
+    "name": "新东吴珍珠大酒店",
+    "district": "姑苏区",
+    "price_per_night": 380,
+    "rating": 4.2,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.0,
+    "lat": 31.317021,
+    "lng": 120.587322,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-苏州-3",
+    "city": "苏州",
+    "name": "东升宾馆(松陵店)",
+    "district": "吴江区",
+    "price_per_night": 460,
+    "rating": 4.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 16.9,
+    "lat": 31.158022,
+    "lng": 120.651589,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-苏州-4",
+    "city": "苏州",
+    "name": "太仓东郊招待所",
+    "district": "太仓市",
+    "price_per_night": 490,
+    "rating": 4.1,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 54.2,
+    "lat": 31.462797,
+    "lng": 121.122725,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-苏州-5",
+    "city": "苏州",
+    "name": "布丁精选酒店(苏州观前街察院场地铁站店)",
+    "district": "姑苏区",
+    "price_per_night": 570,
+    "rating": 4.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 3.4,
+    "lat": 31.31112,
+    "lng": 120.618599,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-武汉-1",
+    "city": "武汉",
+    "name": "城市优选酒店(武汉江汉路步行街汉口江滩店)",
+    "district": "江岸区",
+    "price_per_night": 370,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 0.5,
+    "lat": 30.590183,
+    "lng": 114.300866,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-武汉-2",
+    "city": "武汉",
+    "name": "逸家宾馆(武汉江汉路同济医院店)",
+    "district": "硚口区",
+    "price_per_night": 430,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 5.2,
+    "lat": 30.57167,
+    "lng": 114.257323,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-武汉-3",
+    "city": "武汉",
+    "name": "武汉暖如家旅馆(汉口火车站)",
+    "district": "江汉区",
+    "price_per_night": 480,
+    "rating": 4.7,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 5.6,
+    "lat": 30.612283,
+    "lng": 114.25174,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-武汉-4",
+    "city": "武汉",
+    "name": "武汉军民招待所(古田二路店)",
+    "district": "硚口区",
+    "price_per_night": 500,
+    "rating": 4.2,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 10.9,
+    "lat": 30.589814,
+    "lng": 114.191276,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-武汉-5",
+    "city": "武汉",
+    "name": "心语酒店(武汉江汉路步行街店)",
+    "district": "江汉区",
+    "price_per_night": 580,
+    "rating": 4.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.2,
+    "lat": 30.57953,
+    "lng": 114.288524,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-长沙-1",
+    "city": "长沙",
+    "name": "蓝天宾馆(长沙植物园店)",
+    "district": "雨花区",
+    "price_per_night": 370,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 15.8,
+    "lat": 28.103015,
+    "lng": 113.015658,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-长沙-2",
+    "city": "长沙",
+    "name": "玖沐屋轻奢民宿(长沙五一广场IFS国金中心店)",
+    "district": "芙蓉区",
+    "price_per_night": 400,
+    "rating": 4.4,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 5.8,
+    "lat": 28.191031,
+    "lng": 112.980012,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-长沙-3",
+    "city": "长沙",
+    "name": "长沙金湖宾馆(火车站店)",
+    "district": "芙蓉区",
+    "price_per_night": 380,
+    "rating": 3.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 7.9,
+    "lat": 28.195245,
+    "lng": 113.00998,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-长沙-4",
+    "city": "长沙",
+    "name": "星辰设计师酒店(长沙火车站三湘大市场店)",
+    "district": "芙蓉区",
+    "price_per_night": 550,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 8.3,
+    "lat": 28.202587,
+    "lng": 113.017866,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-长沙-5",
+    "city": "长沙",
+    "name": "缘份客栈(星沙汽车站店)",
+    "district": "长沙县",
+    "price_per_night": 580,
+    "rating": 4.4,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 14.1,
+    "lat": 28.235102,
+    "lng": 113.082261,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-青岛-1",
+    "city": "青岛",
+    "name": "青岛馨悦达宾馆",
+    "district": "市北区",
+    "price_per_night": 370,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 3.7,
+    "lat": 36.091266,
+    "lng": 120.354777,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-青岛-2",
+    "city": "青岛",
+    "name": "青岛盛世豪庭商务宾馆(青岛长途汽车站店)",
+    "district": "市北区",
+    "price_per_night": 430,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.3,
+    "lat": 36.096109,
+    "lng": 120.351387,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-青岛-3",
+    "city": "青岛",
+    "name": "青岛在他乡旅馆",
+    "district": "黄岛区",
+    "price_per_night": 500,
+    "rating": 4.9,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 21.2,
+    "lat": 35.963522,
+    "lng": 120.18463,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-青岛-4",
+    "city": "青岛",
+    "name": "如家快捷酒店(青岛栈桥人民会堂地铁站龙口路店)",
+    "district": "市南区",
+    "price_per_night": 440,
+    "rating": 3.5,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.8,
+    "lat": 36.063961,
+    "lng": 120.32913,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-青岛-5",
+    "city": "青岛",
+    "name": "尚客优快捷酒店(青岛崇明岛路店)",
+    "district": "黄岛区",
+    "price_per_night": 530,
+    "rating": 3.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 16.3,
+    "lat": 36.034931,
+    "lng": 120.205297,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-昆明-1",
+    "city": "昆明",
+    "name": "通怡商务酒店(昆明火车站店)",
+    "district": "官渡区",
+    "price_per_night": 210,
+    "rating": 3.3,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 2.3,
+    "lat": 25.019236,
+    "lng": 102.723733,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-昆明-2",
+    "city": "昆明",
+    "name": "701快捷酒店(昆明第二附属医院)",
+    "district": "五华区",
+    "price_per_night": 360,
+    "rating": 4.6,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.1,
+    "lat": 25.055284,
+    "lng": 102.681755,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-昆明-3",
+    "city": "昆明",
+    "name": "千旺宾馆(昆明经济管理学院海源校区店)",
+    "district": "五华区",
+    "price_per_night": 430,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 8.4,
+    "lat": 25.084615,
+    "lng": 102.651383,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-昆明-4",
+    "city": "昆明",
+    "name": "昆明卡米欧主题酒店(金尚俊园店)",
+    "district": "盘龙区",
+    "price_per_night": 490,
+    "rating": 5.0,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 3.0,
+    "lat": 25.062681,
+    "lng": 102.731622,
+    "room_capacity": 2
+  },
+  {
+    "id": "demo-hotel-昆明-5",
+    "city": "昆明",
+    "name": "惠星公寓酒店",
+    "district": "盘龙区",
+    "price_per_night": 530,
+    "rating": 4.8,
+    "tags": [
+      "演示价格",
+      "演示数据",
+      "酒店"
+    ],
+    "distance_to_center_km": 4.4,
+    "lat": 25.076944,
+    "lng": 102.729084,
+    "room_capacity": 2
+  }
 ]

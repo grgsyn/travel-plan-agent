@@ -1,31 +1,564 @@
 [
-  {"condition": "多云", "temp_low": 9, "temp_high": 16, "rain_prob": 0.1},
-  {"condition": "晴", "temp_low": 8, "temp_high": 18, "rain_prob": 0.0},
-  {"condition": "小雨", "temp_low": 7, "temp_high": 13, "rain_prob": 0.8},
-  {"condition": "阴", "temp_low": 9, "temp_high": 15, "rain_prob": 0.3},
-  {"condition": "中雨", "temp_low": 6, "temp_high": 12, "rain_prob": 0.9},
-
-  {"city": "西安", "condition": "晴", "temp_low": 3, "temp_high": 14, "rain_prob": 0.0},
-  {"city": "西安", "condition": "多云", "temp_low": 4, "temp_high": 13, "rain_prob": 0.1},
-  {"city": "西安", "condition": "阴", "temp_low": 5, "temp_high": 11, "rain_prob": 0.3},
-  {"city": "西安", "condition": "小雨", "temp_low": 4, "temp_high": 9, "rain_prob": 0.7},
-  {"city": "西安", "condition": "晴", "temp_low": 1, "temp_high": 10, "rain_prob": 0.0},
-  {"city": "西安", "condition": "多云", "temp_low": 2, "temp_high": 12, "rain_prob": 0.2},
-  {"city": "西安", "condition": "中雨", "temp_low": 3, "temp_high": 8, "rain_prob": 0.85},
-
-  {"city": "厦门", "condition": "晴", "temp_low": 19, "temp_high": 26, "rain_prob": 0.0},
-  {"city": "厦门", "condition": "多云", "temp_low": 20, "temp_high": 25, "rain_prob": 0.2},
-  {"city": "厦门", "condition": "阴", "temp_low": 19, "temp_high": 24, "rain_prob": 0.35},
-  {"city": "厦门", "condition": "小雨", "temp_low": 18, "temp_high": 23, "rain_prob": 0.75},
-  {"city": "厦门", "condition": "晴", "temp_low": 21, "temp_high": 27, "rain_prob": 0.05},
-  {"city": "厦门", "condition": "多云", "temp_low": 20, "temp_high": 26, "rain_prob": 0.15},
-  {"city": "厦门", "condition": "大雨", "temp_low": 18, "temp_high": 22, "rain_prob": 0.92},
-
-  {"city": "北京", "condition": "晴", "temp_low": 1, "temp_high": 11, "rain_prob": 0.0},
-  {"city": "北京", "condition": "多云", "temp_low": 2, "temp_high": 10, "rain_prob": 0.1},
-  {"city": "北京", "condition": "阴", "temp_low": 3, "temp_high": 9, "rain_prob": 0.25},
-  {"city": "北京", "condition": "小雨", "temp_low": 2, "temp_high": 7, "rain_prob": 0.7},
-  {"city": "北京", "condition": "晴", "temp_low": -1, "temp_high": 8, "rain_prob": 0.0},
-  {"city": "北京", "condition": "多云", "temp_low": 0, "temp_high": 9, "rain_prob": 0.15},
-  {"city": "北京", "condition": "中雨", "temp_low": 1, "temp_high": 6, "rain_prob": 0.85}
+  {
+    "condition": "多云",
+    "temp_low": 9,
+    "temp_high": 16,
+    "rain_prob": 0.1
+  },
+  {
+    "condition": "晴",
+    "temp_low": 8,
+    "temp_high": 18,
+    "rain_prob": 0.0
+  },
+  {
+    "condition": "小雨",
+    "temp_low": 7,
+    "temp_high": 13,
+    "rain_prob": 0.8
+  },
+  {
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 15,
+    "rain_prob": 0.3
+  },
+  {
+    "condition": "中雨",
+    "temp_low": 6,
+    "temp_high": 12,
+    "rain_prob": 0.9
+  },
+  {
+    "city": "西安",
+    "condition": "晴",
+    "temp_low": 3,
+    "temp_high": 14,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "西安",
+    "condition": "多云",
+    "temp_low": 4,
+    "temp_high": 13,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "西安",
+    "condition": "阴",
+    "temp_low": 5,
+    "temp_high": 11,
+    "rain_prob": 0.3
+  },
+  {
+    "city": "西安",
+    "condition": "小雨",
+    "temp_low": 4,
+    "temp_high": 9,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "西安",
+    "condition": "晴",
+    "temp_low": 1,
+    "temp_high": 10,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "西安",
+    "condition": "多云",
+    "temp_low": 2,
+    "temp_high": 12,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "西安",
+    "condition": "中雨",
+    "temp_low": 3,
+    "temp_high": 8,
+    "rain_prob": 0.85
+  },
+  {
+    "city": "厦门",
+    "condition": "晴",
+    "temp_low": 19,
+    "temp_high": 26,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "厦门",
+    "condition": "多云",
+    "temp_low": 20,
+    "temp_high": 25,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "厦门",
+    "condition": "阴",
+    "temp_low": 19,
+    "temp_high": 24,
+    "rain_prob": 0.35
+  },
+  {
+    "city": "厦门",
+    "condition": "小雨",
+    "temp_low": 18,
+    "temp_high": 23,
+    "rain_prob": 0.75
+  },
+  {
+    "city": "厦门",
+    "condition": "晴",
+    "temp_low": 21,
+    "temp_high": 27,
+    "rain_prob": 0.05
+  },
+  {
+    "city": "厦门",
+    "condition": "多云",
+    "temp_low": 20,
+    "temp_high": 26,
+    "rain_prob": 0.15
+  },
+  {
+    "city": "厦门",
+    "condition": "大雨",
+    "temp_low": 18,
+    "temp_high": 22,
+    "rain_prob": 0.92
+  },
+  {
+    "city": "北京",
+    "condition": "晴",
+    "temp_low": 1,
+    "temp_high": 11,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "北京",
+    "condition": "多云",
+    "temp_low": 2,
+    "temp_high": 10,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "北京",
+    "condition": "阴",
+    "temp_low": 3,
+    "temp_high": 9,
+    "rain_prob": 0.25
+  },
+  {
+    "city": "北京",
+    "condition": "小雨",
+    "temp_low": 2,
+    "temp_high": 7,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "北京",
+    "condition": "晴",
+    "temp_low": -1,
+    "temp_high": 8,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "北京",
+    "condition": "多云",
+    "temp_low": 0,
+    "temp_high": 9,
+    "rain_prob": 0.15
+  },
+  {
+    "city": "北京",
+    "condition": "中雨",
+    "temp_low": 1,
+    "temp_high": 6,
+    "rain_prob": 0.85
+  },
+  {
+    "city": "上海",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "上海",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "上海",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "上海",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "上海",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "广州",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "广州",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "广州",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "广州",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "广州",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "深圳",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "深圳",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "深圳",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "深圳",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "深圳",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "重庆",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "重庆",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "重庆",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "重庆",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "重庆",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "杭州",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "杭州",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "杭州",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "杭州",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "杭州",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "南京",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "南京",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "南京",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "南京",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "南京",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "苏州",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "苏州",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "苏州",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "苏州",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "苏州",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "武汉",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "武汉",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "武汉",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "武汉",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "武汉",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "长沙",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "长沙",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "长沙",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "长沙",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "长沙",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "青岛",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "青岛",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "青岛",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "青岛",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "青岛",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "昆明",
+    "condition": "晴",
+    "temp_low": 6,
+    "temp_high": 17,
+    "rain_prob": 0.0
+  },
+  {
+    "city": "昆明",
+    "condition": "多云",
+    "temp_low": 8,
+    "temp_high": 19,
+    "rain_prob": 0.1
+  },
+  {
+    "city": "昆明",
+    "condition": "阴",
+    "temp_low": 9,
+    "temp_high": 17,
+    "rain_prob": 0.2
+  },
+  {
+    "city": "昆明",
+    "condition": "小雨",
+    "temp_low": 8,
+    "temp_high": 14,
+    "rain_prob": 0.7
+  },
+  {
+    "city": "昆明",
+    "condition": "多云",
+    "temp_low": 7,
+    "temp_high": 18,
+    "rain_prob": 0.1
+  }
 ]
