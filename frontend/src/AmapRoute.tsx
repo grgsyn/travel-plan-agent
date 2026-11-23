@@ -52,6 +52,7 @@ export default function AmapRoute({ origin, destination, onError }: Props) {
     if (!el || !amapConfigured) return
     let disposed = false
     let map: any = null
+    let viewTimer: number | undefined
 
     const geocode = (AMap: any, name: string): Promise<any> =>
       new Promise((resolve, reject) => {
@@ -127,7 +128,19 @@ export default function AmapRoute({ origin, destination, onError }: Props) {
         const startMarker = marker(start, origin, 'start')
         const endMarker = marker(end, destination, 'end')
         map.add([glow, line, startMarker, endMarker])
-        map.setFitView([startMarker, endMarker])
+        const span = Math.max(Math.abs(start.getLng() - end.getLng()), Math.abs(start.getLat() - end.getLat()))
+        const zoom = span > 30 ? 3 : span > 15 ? 4 : span > 8 ? 5 : span > 4 ? 6 : span > 2 ? 7 : 8
+        const center = new AMap.LngLat(
+          (start.getLng() + end.getLng()) / 2,
+          (start.getLat() + end.getLat()) / 2,
+        )
+        const applyView = () => {
+          if (!disposed) map?.setZoomAndCenter(zoom, center)
+        }
+        // 高德在容器/底图完成前会忽略视角设置；完成后再补一次。
+        map.on('complete', applyView)
+        applyView()
+        viewTimer = window.setTimeout(applyView, 500)
         setLoading(false)
         window.clearTimeout(timer)
       })
@@ -138,6 +151,7 @@ export default function AmapRoute({ origin, destination, onError }: Props) {
     return () => {
       disposed = true
       window.clearTimeout(timer)
+      if (viewTimer) window.clearTimeout(viewTimer)
       map?.destroy()
     }
   }, [origin, destination])
