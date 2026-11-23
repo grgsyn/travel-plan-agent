@@ -28,7 +28,8 @@ React + Vite
   |-- POST /api/plan             SSE 规划
   |-- POST /api/plan/{id}/resume 中断恢复
   |-- POST /api/plan/{id}/refine 单日返工
-  `-- GET  /api/plan/{id}        方案 / 版本 / 统计
+  |-- GET  /api/plan/{id}        方案 / 版本 / 统计
+  `-- GET  /api/coverage         演示覆盖范围
 ```
 
 FastAPI 负责鉴权、SSE、持久化和静态前端托管；LangGraph 负责流程状态与中断；团队会话负责任务拆解、专业选择与评审返工。
@@ -131,6 +132,8 @@ SQLite 保存：
 - 未配置时继续使用 mock 景点与坐标直线估算。
 
 高德 POI 的开放时间、票价字段不完整时会标记“待核实”；道路距离不代表步行可达。
+
+规划前会检查本地 mock 覆盖：缺航线、酒店、景点或天气时明确拒绝；GET /api/coverage 返回当前覆盖。
 
 ## 10. 游览时长估算
 
