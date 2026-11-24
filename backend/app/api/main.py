@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 import logging
 import traceback
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Request
@@ -40,6 +40,7 @@ from ..settings import AppSettings
 from .. import summary
 from ..tools.factory import make_source
 from . import store
+from uuid import uuid4
 
 logger = logging.getLogger(__name__)
 
@@ -712,6 +713,25 @@ async def cancel_plan(plan_id: str):
     }
 
 
+def _refine_event(plan_id: str, text: str, event_type: str = "agent_message") -> None:
+    """把局部返工的可见步骤写入 run_events，刷新后仍可回放。"""
+    events = store.list_events(plan_id)
+    seq = (events[-1]["seq"] + 1) if events else 1
+    store.append_event({
+        "schema_version": 1,
+        "run_id": plan_id,
+        "plan_version": store.current_version(plan_id),
+        "event_id": uuid4().hex,
+        "seq": seq,
+        "occurred_at": datetime.now(timezone.utc).isoformat(),
+        "event_type": event_type,
+        "stage": "refine",
+        "actor": "orchestrator",
+        "parent_id": None,
+        "payload": {"text": text, "summary": text},
+    })
+
+
 @app.post("/api/plan/{plan_id}/refine")
 async def refine_plan(plan_id: str, body: RefineRequest):
     """单日修改走"局部团队返工"：专业 Agent 改 → Critic 复核 → Writer 重写计划书。
@@ -771,6 +791,7 @@ async def refine_plan(plan_id: str, body: RefineRequest):
     }
 
     client = LLMClient(cfg.llm, cfg.orchestration.node_timeout_s, budget=None)
+    _refine_event(plan_id, f"开始局部返工：{target}；{body.feedback or '无具体意见'}")
     result = await peer_hub.run_session(
         brief=brief,
         source=make_source(cfg.datasource),
@@ -783,11 +804,24 @@ async def refine_plan(plan_id: str, body: RefineRequest):
     )
     if not result.converged or result.itinerary is None:
         detail = (result.escalation or {}).get("question") or "；".join(result.warnings) or "团队返工未收敛"
+        _refine_event(plan_id, f"局部返工未完成：{detail}")
         raise HTTPException(status_code=409, detail=detail)
 
     new_itinerary = result.itinerary
+    expected_dates = [brief.start_date + timedelta(days=i) for i in range(brief.days)]
+    actual_dates = [day.date for day in new_itinerary.days]
+    if actual_dates != expected_dates:
+        detail = (
+            f"返工结果日期不一致：期望 {expected_dates[0]} 至 {expected_dates[-1]}（{brief.days} 天），"
+            f"实际 {actual_dates[0] if actual_dates else '空'} 至 {actual_dates[-1] if actual_dates else '空'}；"
+            "已拒绝保存，请重试或整轮重新规划"
+        )
+        _refine_event(plan_id, f"局部返工被拒绝：{detail}")
+        raise HTTPException(status_code=409, detail=detail)
+
     new_critique = critic.run(brief, new_itinerary, result.ctx.poi, result.ctx.transport, result.ctx.weather)
     if not new_critique.passed:
+        _refine_event(plan_id, "局部返工后的方案未通过硬校验，未保存")
         raise HTTPException(status_code=409, detail="返工后的方案未通过硬校验，未保存")
 
     new_team = {
@@ -818,6 +852,7 @@ async def refine_plan(plan_id: str, body: RefineRequest):
         note=f"团队返工 {target}：{body.feedback or '无具体意见'}",
         team=new_team,
     )
+    _refine_event(plan_id, f"局部返工完成：{target}，版本 {store.current_version(plan_id)}")
     return {
         "plan_id": plan_id,
         "itinerary": new_itinerary.model_dump(mode="json"),
@@ -831,6 +866,7 @@ async def refine_plan(plan_id: str, body: RefineRequest):
         "approved_version": new_team["approved_version"],
         "team_state": "approved",
         "llm_stats": client.stats(),
+        "events": store.list_events(plan_id),
         "summary": summary.build_summary(new_itinerary, cfg.datasource.kind),
     }
 

@@ -469,8 +469,10 @@ export default function App() {
   const [errorStats, setErrorStats] = useState<LlmStats | undefined>()
   const [recoveryStatus, setRecoveryStatus] = useState<string | undefined>()
   const [refining, setRefining] = useState<string | null>(null)
-  const [feedback, setFeedback] = useState<Record<string, string>>({})
-  const [refineNote, setRefineNote] = useState<Record<string, string>>({})
+  const [refineTarget, setRefineTarget] = useState('')
+  const [refineText, setRefineText] = useState('')
+  const [refineNote, setRefineNote] = useState('')
+  const refineInputRef = useRef<HTMLInputElement>(null)
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [liveEvents, setLiveEvents] = useState<RunEvent[]>([])
@@ -834,12 +836,30 @@ export default function App() {
 
   async function refine(day: string) {
     if (!result) return
+    const text = refineText.trim()
     setRefining(day)
+    setRefineNote('')
+    setLiveEvents((prev) => [
+      ...prev,
+      {
+        schema_version: 1,
+        run_id: result.plan_id,
+        plan_version: result.version ?? 1,
+        event_id: `refine-local-${Date.now()}`,
+        seq: prev.length + 1,
+        occurred_at: new Date().toISOString(),
+        event_type: 'agent_message',
+        stage: 'refine',
+        actor: 'orchestrator',
+        parent_id: null,
+        payload: { text: `开始局部返工 ${day}：${text || '无具体意见'}`, summary: '开始局部返工' },
+      },
+    ])
     try {
       const res = await apiFetch(`/api/plan/${result.plan_id}/refine`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ date: day, feedback: feedback[day] ?? '' }),
+        body: JSON.stringify({ date: day, feedback: text }),
       })
       if (!res.ok) {
         const detail = await res.json().catch(() => null)
@@ -859,17 +879,16 @@ export default function App() {
         team_state: data.team_state ?? null,
         llm_stats: data.llm_stats ?? result.llm_stats,
       })
+      if (Array.isArray(data.events) && data.events.length) setLiveEvents(data.events)
       await loadVersions(result.plan_id)
-      setFeedback((f) => ({ ...f, [day]: '' }))
-      setRefineNote((n) => ({
-        ...n,
-        [day]:
-          data.refine_source === 'team'
-            ? `已由团队返工复核（第 ${data.version ?? '—'} 版）`
-            : data.refine_source === 'model'
-              ? '已由模型理解意见后重排'
-              : '已按规则重排',
-      }))
+      setRefineText('')
+      setRefineNote(
+        data.refine_source === 'team'
+          ? `已由团队返工复核（第 ${data.version ?? '—'} 版）`
+          : data.refine_source === 'model'
+            ? '已由模型理解意见后重排'
+            : '已按规则重排',
+      )
     } catch (e) {
       setError(describeError(e))
     } finally {
@@ -932,6 +951,12 @@ export default function App() {
   const total = result?.itinerary.total_cost ?? 0
   const budget = result?.itinerary.budget_total ?? form.budget_total
   const percent = budget > 0 ? (total / budget) * 100 : 0
+
+  useEffect(() => {
+    if (!result) return
+    const dates = result.itinerary.days.map((d) => d.date)
+    setRefineTarget((prev) => (prev && dates.includes(prev) ? prev : dates[0] ?? ''))
+  }, [result])
 
   const selectedItem = useMemo(() => {
     if (!selected || !result) return null
@@ -1598,7 +1623,7 @@ export default function App() {
           {tab === 'tt' && (
             <div className="v1-plan-grid">
               <aside className="v1-dayrail">
-                <span className="v1-label">五天</span>
+                <span className="v1-label">{days.length} 天</span>
                 <button className={dayFilter === null ? 'on' : ''} onClick={() => setDayFilter(null)}>
                   <b>全部</b>
                   <small>{money(total)}</small>
@@ -1625,22 +1650,37 @@ export default function App() {
                   <span><i className="hotel" />住宿</span>
                   <span><i className="free" />自由时间</span>
                 </div>
-                <div className="v1-cmd">
+                <div className="v1-cmd v1-rework">
                   <span>/</span>
+                  <select
+                    className="v1-rework-date"
+                    aria-label="选择要重排的日期"
+                    value={refineTarget}
+                    onChange={(e) => {
+                      setRefineTarget(e.target.value)
+                      setRefineNote('')
+                    }}
+                    disabled={!days.length}
+                  >
+                    {days.map((d) => (
+                      <option key={d.date} value={d.date}>{d.date.slice(5)}</option>
+                    ))}
+                  </select>
                   <input
-                    placeholder="对某一天下指令，例如：11-21 下午换成室内"
-                    value={feedback[selected?.date ?? days[0]?.date ?? ''] ?? ''}
-                    onChange={(e) => setFeedback({ ...feedback, [selected?.date ?? days[0]?.date ?? '']: e.target.value })}
+                    ref={refineInputRef}
+                    placeholder="对选中的日期下指令，例如：下午换成室内"
+                    value={refineText}
+                    onChange={(e) => setRefineText(e.target.value)}
                   />
                   <button
                     className="v1-primary sm"
                     disabled={!days.length || refining !== null}
-                    onClick={() => refine(selected?.date ?? days[0]?.date ?? '')}
+                    onClick={() => refine(refineTarget)}
                   >
                     {refining ? '重排中…' : '执行'}
                   </button>
                 </div>
-                {selected && refineNote[selected.date] && <p className="v1-refine-note">{refineNote[selected.date]}</p>}
+                {refineNote && <p className="v1-refine-note">{refineNote}</p>}
               </div>
 
               <aside className="v1-inspector">
@@ -1653,7 +1693,16 @@ export default function App() {
                       <div className="v1-kv"><span>类型</span><b>{TYPE_LABEL[selectedItem.type] ?? selectedItem.type}</b></div>
                       <div className="v1-kv"><span>花费</span><b>{selectedItem.cost > 0 ? money(selectedItem.cost) : '免费'}</b></div>
                       {selectedItem.note && <p className="v1-note">{selectedItem.note}</p>}
-                      <button className="v1-ghost sm" onClick={() => refine(selected?.date ?? days[0]?.date ?? '')} disabled={refining !== null}>
+                      <button
+                        className="v1-ghost sm"
+                        onClick={() => {
+                          if (!selected) return
+                          setRefineTarget(selected.date)
+                          setRefineNote('已选择这一天，请在下方输入修改意见')
+                          refineInputRef.current?.focus()
+                        }}
+                        disabled={refining !== null}
+                      >
                         让团队改这一天
                       </button>
                     </>

@@ -1356,6 +1356,8 @@ body:has(.v1) {
   font-size: 12px;
 }
 
+.v1-rework-date{background:rgba(139,156,255,.08);border:1px solid rgba(139,156,255,.22);border-radius:6px;color:var(--sub);font:500 10px/1 var(--mono);padding:5px 6px;outline:none}
+.v1-rework-date:focus{border-color:rgba(139,156,255,.55)}
 .v1-cmd input {
   flex: 1;
   background: none;
