@@ -28,6 +28,7 @@ React + Vite
   |-- POST /api/plan             SSE 规划
   |-- POST /api/plan/{id}/resume 中断恢复
   |-- POST /api/plan/{id}/refine 单日返工
+  |-- POST /api/plan/{id}/rollback 版本回滚
   |-- GET  /api/plan/{id}        方案 / 版本 / 统计
   `-- GET  /api/coverage         演示覆盖范围
 ```
@@ -89,6 +90,12 @@ SQLite 保存：
 - `runs`：运行结果、失败原因与用量。
 
 长时间会话快照使用 artifact store 单独保存，避免 checkpoint 体积随对话线性增长。
+
+## 4.1 局部返工
+
+`POST /api/plan/{id}/refine` 只改目标日期，其余日期由冻结逻辑保留。返工开始、完成、被拒绝都会写入 `run_events`，前端刷新后可在轨迹抽屉回放。
+
+保存前还会校验返工结果的日期序列必须与 `TripBrief.start_date ~ end_date` 完全一致；多一天、少一天或偏移都会返回 409，不覆盖原方案。
 
 ## 5. 中断与恢复
 

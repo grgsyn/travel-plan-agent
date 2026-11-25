@@ -43,6 +43,14 @@
 | `failure_type` | 失败/中断类型；成功为 `completed` |
 | `message` | 失败原因，最多 160 字，不含密钥 |
 
+## 2.1 局部返工
+
+`/api/plan/{id}/refine` 不新建 `runs` 记录，但会把返工开始、完成、失败写入同一个 `run_events`。因此：
+
+- 轨迹抽屉和 `/api/plan/{id}/events` 能看到返工；
+- 方案版本记录 `source=team_rework`；
+- 返工日期不一致会被 409 拒绝，不会生成新版本。
+
 ## 3. 页面
 
 设置面板 → 运行指标：最近 10 次运行，显示时间、状态、调用数、tokens、耗时、结果。
